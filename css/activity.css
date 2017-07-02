@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+.nei{ background:#f4f4f2;}
+.nei .neiCont .w .inRecord .xCont .xCont_div{
+	margin-top:60px;
+	padding-top:0;
+}
+.dCont{
+	padding-top:30px;
+	float:left;
+}
+.dCont h2{
+	width:500px;
+	float:left;
+}
+
+/*分享组件*/
+.share-button{
+	width:300px;
+	height:54px;
+	float:right;
+	padding-top:5px;
+	text-align:right;
+}
+
+/*正文*/
+.xCont_div h4{
+	font-weight:normal;
+	color:rgb(100,100,100);
+	float:left;
+}
+.xCont_div .tv_v{
+	float: right;
+	line-height:2;
+}
+.xCont_div .tv_v span{
+	margin-left:15px;
+}
+.xCont_div .tv_v span b{
+	font-weight: normal;
+	color: #afa9a4;
+	margin-right:5px;
+	font-size:15px;
+}
+.xCont_div .tv_v span i{
+	font-style:normal;
+	font-size: 16px;
+	color: #afa9a4;
+}
+.xCont_div p{
+	text-indent:2em;
+	font-family:"宋体";
+}
+.xCont_div .chatu{
+	margin:15px auto;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_l .x_lt > a{
+	width:230px;
+	border-radius:5px;
+}
+
+/*热门推荐*/
+.nei .neiCont .w .inRecord .inR_right{
+  width: 260px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 120px;
+}
+.nei .neiCont .w .inRecord .inR_right > div {
+  box-shadow: 0px 0px 5px rgb(233,233,233);
+  background: #ffffff url("/images/ff1895/bg04_11.jpg") left top no-repeat;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div {
+  overflow: hidden;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div h2 {
+  text-align: center;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: 500;
+  border-left:4px solid #000;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div01 {
+  margin: 0px -7px;
+  padding: 0px 20px 10px 20px;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div01 a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 2px 13px;
+  border: 1px solid #65645f;
+  color: #65645f;
+  margin: 7px;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div02 ul {
+  width: 258px;
+  margin: 10px auto;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div02 ul li {
+  width: 258px;
+  height: 153px;
+  overflow: hidden;
+  margin: 18px 0px;
+  text-align:center;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div02 ul li a {
+  display: block;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div02 ul li a img{
+  width: 225px;
+  height: 153px;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div02 > a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #dddad5;
+  line-height: 2.5;
+  font-size: 16px;
+  color: #020202;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div03 {
+  width: 225px;
+  height: 225px;
+  margin: 10px auto;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div03 img{
+  width: 225px;
+  height: 225px;
+}
+

@@ -1,0 +1,48 @@
+/* CSS Document */
+/*分页*/
+div,
+ul,
+ol,
+li,
+pre{margin:0;padding:0;font-family:微软雅黑;} 
+.cb{clear:both;}
+#pageGro{ 
+	width:700px; 
+	height:100px; 
+	margin:0px auto;
+	padding-top:30px;
+}
+#pageGro div,
+#pageGro div ul li{  
+	float:left; 
+	margin-left:5px;
+}
+#pageGro div ul li{ 
+	width:82px;
+	height:82px;
+	line-height:82px;
+	font-size:21px;
+	color:#000;
+	background:#fff;
+	text-align:center;  
+	cursor:pointer; 
+	list-style:none;
+}
+#pageGro div ul li.on{ 
+	color:#fff; 
+	background:#000; 
+}
+#pageGro .pageUp,
+#pageGro .pageDown{ 
+	width:82px;
+	height:82px;
+	cursor:pointer;
+	text-align:center;
+	background-color:#fff;
+	display:table;
+}
+#pageGro .pageUp span,
+#pageGro .pageDown span{ 
+	display:table-cell;
+	vertical-align:middle;
+}

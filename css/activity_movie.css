@@ -1,0 +1,725 @@
+﻿h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+  padding: 0px;
+}
+a,
+a:hover,
+body {
+  background: none;
+  color: #666;
+}
+a:hover {
+  text-decoration: none!important;
+}
+a,
+body,
+input,
+button,
+p,
+div,
+span,
+textarea {
+  font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+}
+p,
+body,
+ul,
+li,
+a div,
+span {
+  margin: 0px;
+}
+ul,
+ol,
+li {
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+  background: none;
+}
+img {
+  vertical-align: middle;
+  border: none;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+i {
+  font-style: normal;
+}
+.clearfix:after {
+  display: block;
+  overflow: hidden;
+  content: "";
+  clear: both;
+}
+.none {
+  display: none;
+}
+.w {
+  width: 1180px;
+  margin: 0px auto;
+}
+body {
+  background: #f4f4f2!important;
+}
+html {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.nei .neiImg {
+  width: 100%;
+  height: 252px;
+  margin-top:68px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+.nei .neiImg_h1 {
+  height: 600px;
+}
+.nei .neiImg_h2 {
+  height: 166px;
+  color: #ffffff;
+  background: #353636;
+  padding-top: 40px;
+  box-shadow: 0px 0px 5px #000;
+}
+.nei .neiCont .w div,
+.nei .neiCont .w p {
+  font-size: 18px;
+  line-height: 2;
+}
+.nei .neiCont .w .aboutUs {
+  margin-top: -90px;
+  width: 1100px;
+  font-size: 20px;
+  line-height: 2;
+}
+.nei .neiCont .w .aboutUs > div {
+  background: #ffffff url("/images/ff1895/bg03_05.png") 570px bottom no-repeat;
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+  border-radius: 5px;
+  padding: 40px;
+  font-size: 20px;
+  line-height: 2;
+}
+.nei .neiCont .w .aboutUs > div p {
+  font-size: 20px;
+  line-height: 2;
+}
+.nei .neiCont .w .aboutUs > div > div {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 2;
+}
+.nei .neiCont .w .aboutUs > div > div.aDiv_tit {
+  height: 100px;
+  padding: 0px 65px;
+  position: absolute;
+  top: -77px;
+  left: 50%;
+  background: #9b9791;
+  margin-left: -140px;
+  margin-bottom: 50px;
+  line-height: 50px;
+}
+.nei .neiCont .w .aboutUs > div > div.aDiv_tit p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.nei .neiCont .w .aboutUs > div > div.aDiv_tit strong {
+  color: #ffffff;
+  font-size: 37px;
+}
+.nei .neiCont .w .aboutUs div.a_join {
+  margin-top: 68px;
+}
+.nei .neiCont .w .aboutUs div.a_coop {
+  margin-top: 68px;
+}
+.nei .neiCont .w .laterPost {
+  text-align: center;
+  margin-top: 50px;
+}
+.nei .neiCont .w .laterPost > a {
+  display: block;
+  width: 455px;
+  height: 56px;
+  font-size: 19px;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 56px;
+  background: #02d174!important;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+.nei .neiCont .w .inRecord {
+  overflow: hidden;
+  margin-top: 45px;
+}
+.nei .neiCont .w .inRecord .x_video {
+  width: 100%;
+}
+.nei .neiCont .w .inRecord .x_video > img {
+  margin: 40px 0px 20px 0px;
+}
+.nei .neiCont .w .inRecord .inR_left {
+  width: 893px;
+  float: left;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all {
+  margin-left: 5px;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list {
+  overflow: hidden;
+  height: 320px;
+  box-shadow: 0px 0px 5px #65645f;
+  background: #fff;
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.img {
+  width: 440px;
+  height: 322px;
+  float: left;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.img a {
+  display: block;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.img a img{
+  width:440px;
+  height:322px;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.text {
+  float: left;
+  width: 416px;
+  padding-left: 25px;
+  padding-right: 6px;
+  padding-top: 10px;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.text > h2 a {
+  font-size: 24px;
+  display: block;
+  color: #020202;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 2;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.text > h2 img{
+  float: right;
+  margin-top: -38px;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.text > p {
+  font-size: 16px;
+  color: #65645f;
+  height: 200px;
+  overflow: hidden;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.text > div.t_view {
+  overflow: hidden;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.text > div.t_view div span {
+  min-width: 40px;
+  display: inline-block;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.text > div.t_view div span b {
+  font-weight: normal;
+  color: #afa9a4;
+  margin-right: 3px;
+  font-size:15px;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.text > div.t_view div span i {
+  font-size: 16px;
+  color: #afa9a4;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.text > div.t_view > div.tv_t {
+  float: left;
+  margin-top:10px;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.text > div.t_view > div.tv_v {
+  float: right;
+}
+.nei .neiCont .w .inRecord .inR_left .inRLeft_all .inRLeft_list > div.text > div.t_view > div.tv_v span {
+  margin:0 10px;
+}
+.nei .neiCont .w .inRecord .xCont {
+  position: relative;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div {
+  min-height: 300px;
+  box-shadow: 0px 0px 5px #65645f;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_t {
+  overflow: hidden;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_t .xt_t {
+  float: left;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_t .xt_v {
+  float: right;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_l {
+  margin-top: 50px;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_l .x_lt {
+  background: url("/images/ff1895/i09_03.png") left center no-repeat;
+  padding-left: 40px;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_l .x_lt > a {
+  display: inline-block;
+  padding: 5px 20px;
+  border: 1px solid #65645f;
+  color: #65645f;
+  border-radius: 3px;
+  margin: 0px 5px;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_l .x_lb {
+  text-align: center;
+  margin: 50px 0px;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_l .x_lb > a {
+  display: inline-block;
+  min-width: 60px;
+  text-align: center;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_f h3 {
+  font-size: 16px;
+  width: 100%;
+  color: #020202;
+  border-bottom: 2px solid #65645f;
+  line-height: 2.5;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_f .x_fa {
+  overflow: hidden;
+  margin: 15px -10px;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_f .x_fa .x_fa_list {
+  float: left;
+  margin: 0px 10px;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_f .x_fa .x_fa_list a {
+  display: block;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_f .x_fa .x_fa_list a > .img {
+  width: 271pxpx;
+  height: 184pxpx;
+  overflow: hidden;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_f .x_fa .x_fa_list a > .img img{
+  width: 271pxpx;
+  height: 184pxpx;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_f .x_fa .x_fa_list a > p {
+  font-size: 17px;
+  color: #020202;
+  line-height: 2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 500;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_f > a {
+  border: 1px solid #020202;
+  color: #020202;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  width: 200px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 40px;
+  margin: 40px auto;
+  display: block;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p > h3 {
+  font-size: 16px;
+  color: #b0aca7;
+  border-bottom: 2px solid #b0aca7;
+  line-height: 2.5;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_opt {
+  overflow: hidden;
+  margin-top: 30px;
+  border-bottom: 2px solid #b0aca7;
+  padding-bottom: 50px;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_opt textarea {
+  width: 99%;
+  min-height: 137px;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_opt button {
+  height: 40px;
+  width: 164px;
+  font-size: 18px;
+  background: none;
+  color: #020202;
+  border: 1px solid #020202;
+  cursor: pointer;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 40px;
+  float: right;
+  outline: none;
+  margin-right: 1%;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_list {
+  /*overflow: hidden;*/
+  margin: 20px auto;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_list .item {
+  margin: 20px 0px;
+  position: relative;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_list .item .iShow {
+  overflow: hidden;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_list .item .iShow .head {
+  width: 66px;
+  height: 66px;
+  float: left;
+  background: red;
+  cursor: pointer;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_list .item .iShow .cont {
+  width: 900px;
+  float: right;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_list .item .iShow .cont .cont-tit > a {
+  display: inline-block;
+  font-size: 18px;
+  color: #020202;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_list .item .iShow .cont .cont-tit > i {
+  border-left: 2px solid #b0aca7;
+  color: #b0aca7;
+  display: inline-block;
+  padding-left: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_list .item .iShow .cont .cont-bri {
+  font-size: 18px;
+  line-height: 2;
+  color: #65645f;
+}
+.nei .neiCont .w .inRecord .xCont .xCont_div .x_p .x_pd .x_list .item .iHide {
+  width: 444px;
+  height: 251px;
+  position: absolute;
+  left: 30px;
+  top: 67px;
+  box-shadow: 0px 0px 12px #65645f;
+  display: none;
+}
+.nei .neiCont .w .inRecord .duoL div.fa {
+  overflow: hidden;
+  background: #fff;
+  margin: 40px 0px 20px 5px;
+  box-shadow: 0px 0px 5px #65645f;
+  border-radius: 5px;
+}
+.nei .neiCont .w .inRecord .duoL div.fa > div {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px 0px;
+}
+.nei .neiCont .w .inRecord .duoL div.fa div.wz {
+  background: url("/images/ff1895/w04_03.png") right center no-repeat;
+}
+.nei .neiCont .w .inRecord .duoR {
+  margin-top: 40px!important;
+}
+.nei .neiCont .w .inRecord .duoR .bfff {
+  background: #fff!important;
+}
+.nei .neiCont .w .inRecord .duoR .bfff .uiHead div.ui_div {
+  overflow: hidden;
+}
+.nei .neiCont .w .inRecord .duoR .bfff .uiHead div.ui_div div {
+  display: inline-block;
+  float: left;
+  width: 33%;
+  text-align: center;
+  height: 57px;
+  padding: 20px 0px;
+}
+.nei .neiCont .w .inRecord .duoR .bfff .uiHead div.ui_div div.tx {
+  background: url("/images/ff1895/w05_03.png") right center no-repeat;
+}
+.nei .neiCont .w .inRecord .duoR .bfff .uiHead div.ui_div div.tx a {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+.nei .neiCont .w .inRecord .duoR .bfff .uiHead div.ui_div div.fs {
+  background: url("/images/ff1895/w05_03.png") right center no-repeat;
+  font-size: 14px;
+}
+.nei .neiCont .w .inRecord .duoR .bfff .uiHead div.ui_div div.fs span {
+  display: block;
+  font-size: 18px;
+}
+.nei .neiCont .w .inRecord .duoR .bfff .uiHead div.ui_div div.gz {
+  font-size: 14px;
+}
+.nei .neiCont .w .inRecord .duoR .bfff .uiHead div.ui_div div.gz span {
+  display: block;
+  font-size: 18px;
+}
+.nei .neiCont .w .inRecord .duoR .bfff .uiHead li {
+  border-top: 2px solid #afa9a4;
+}
+.nei .neiCont .w .inRecord .duoR .bfff .uiHead li a {
+  width: 100%;
+  text-align: center;
+  height: 53px;
+  line-height: 53px;
+  display: block;
+  font-size: 18px;
+}
+.nei .neiCont .w .inRecord .duoR .bfff .uiHead li.uiHead_active a {
+  border-left: 4px solid #000;
+}
+.nei .neiCont .w .inRecord .duoR .inR_div .inR_div02 .duoR_l {
+  border-top: 2px solid #afa9a4;
+}
+.nei .neiCont .w .inRecord .duoR .inR_div .inR_div02 .duoR_l a {
+  display: block;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+.nei .neiCont .w .inRecord .duoR .inR_div .inR_div02 .duoR_l a div {
+  display: inline-block;
+  float: left;
+}
+.nei .neiCont .w .inRecord .duoR .inR_div .inR_div02 .duoR_l a div.tx {
+  width: 68px;
+  height: 68px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.nei .neiCont .w .inRecord .duoR .inR_div .inR_div02 .duoR_l a div.tx img {
+  width: 100%;
+}
+.nei .neiCont .w .inRecord .duoR .inR_div .inR_div02 .duoR_l a div.jj h3 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 2;
+}
+.nei .neiCont .w .inRecord .duoR .inR_div .inR_div02 .duoR_l a div.jj p {
+  line-height: 2;
+  font-size: 16px;
+}
+.nei .neiCont .w .inRecord .duoR .inR_div .inR_div02 .duoR_l a div.jia {
+  float: right;
+  margin-top: 10px;
+}
+.nei .neiCont .w .inRecord .inR_right {
+  width: 260px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+.nei .neiCont .w .inRecord .inR_right > div {
+  box-shadow: 0px 0px 5px #65645f;
+  background: #ffffff url("/images/ff1895/bg04_11.jpg") left top no-repeat;
+  border-radius: 5px;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div {
+  overflow: hidden;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div h2 {
+  text-align: center;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div01 {
+  margin: 0px -7px;
+  padding: 0px 20px 10px 20px;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div01 a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 2px 13px;
+  border-radius: 4px;
+  border: 1px solid #65645f;
+  color: #65645f;
+  margin: 7px;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div02 ul {
+  width: 258px;
+  margin: 10px auto;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div02 ul li {
+  width: 258px;
+  height: 153px;
+  overflow: hidden;
+  margin: 18px 0px;
+  text-align:center;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div02 ul li a {
+  display: block;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div02 ul li a img{
+  width: 225px;
+  height: 153px;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div02 > a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #dddad5;
+  line-height: 2.5;
+  font-size: 16px;
+  color: #020202;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div03 {
+  width: 225px;
+  height: 225px;
+  margin: 10px auto;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.nei .neiCont .w .inRecord .inR_right .inR_div > div.inR_div03 img{
+  width: 225px;
+  height: 225px;
+}
+.nei .neiCont .w .active .act_tit {
+  border-bottom: 2px solid rgb(208,208,208);
+  text-align: right;
+  margin-top: 40px;
+}
+.nei .neiCont .w .active .act_tit a {
+  display: inline-block;
+  font-size: 17px;
+  height: 20px;
+  line-height: 20px;
+  border-right: 2px solid rgb(208,208,208);
+  padding: 0px 40px;
+}
+
+.nei .neiCont .w .active .act_tit a input{
+	background:#f4f4f2;
+	border:1px solid #999;
+}
+.nei .neiCont .w .active .act_tit a.act {
+  color: #000;
+}
+.nei .neiCont .w .active .act_tit a:hover {
+  color: #000;
+}
+.nei .neiCont .w .active .act_cont {
+  overflow: hidden;
+  margin: 20px -24px;
+}
+.nei .neiCont .w .active .act_cont .acvC_list {
+  float: left;
+  background: #fff;
+  width: 515px;
+  padding: 25px;
+  border-radius: 3px;
+  margin: 20px 24px;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.img {
+  width: 515px;
+  height: 290px;
+  overflow: hidden;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.img a {
+  display: block;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.img a img{
+  width: 515px;
+  height: 290px;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.text {
+  position: relative;
+  margin-top:12px;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.text h2 a {
+  display: block;
+  font-size: 18px;
+  line-height: 2;
+  color: #020202;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.text > div span {
+  display: inline-block;
+  height: 30px;
+  line-height: 40px;
+  padding-left: 30px;
+  margin-right: 5px;
+  font-size: 16px;
+  padding-bottom:10px;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.text > div span.time {
+  background:url(../images/activity_movie/time.png) left center no-repeat;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.text > div span.address {
+  background:url(../images/activity_movie/address.png) left center no-repeat;
+  margin-left:30px;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.text div.a {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.text div.a a {
+  display: block;
+  color: #ffffff;
+  background: #ff5454!important;
+  padding: 4px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.text div.b a {
+  background: #35dd7d !important;
+}
+.nei .neiCont .w .active .act_cont .acvC_list > div.text div.c a {
+  background: #969696 !important;
+}
+
+/*分页*/
+#pages{ width:1180px; clear:both; padding: 130px 0px 30px; text-align:center;}
+#pages span { display: inline-block; height: 82px; padding: 0 35px; margin-left:5px; background: #000; line-height: 82px; text-align: center; color: #fff; font-size:21px; }
+#pages a { display: inline-block; height: 82px; padding: 0 31px;background: #fff; line-height: 82px; text-align: center; text-decoration: none; color: #333; cursor:pointer; margin-left:5px;  font-size:21px; }
+#pages a.prev,#pages a.next{ display: inline-block; height: 18px; padding: 32px 29px;background: #fff; line-height: 82px; text-align: center; text-decoration: none; color: #333; cursor:pointer; margin-left:5px;  font-size:21px; }
+#pages a.a:hover{ display: inline-block; height: 82px; padding: 0 31px;  background: #000; line-height: 82px; text-align: center; color: #fff; }

@@ -1,0 +1,136 @@
+/* CSS Document */
+body{
+	margin:0 auto;
+	padding:0;
+}
+#img.source-image {width: 100%;position: absolute;top: 0;left: 0;} 
+.head{
+	border:0;
+	height:68px;
+	width:100%;
+}
+.lg-main{
+	background:url(../images/regist/regist-bg.png) center no-repeat;
+	height:865px;
+	text-align:center;
+	margin:0;
+	padding-bottom:200px;
+}
+.lg-main img{
+	margin-top:100px;
+}
+.lg-main h1{
+	color:#FFF;
+}
+.lg-main table tr th label{
+	font-family:"Adobe 黑体 Std R";
+	font-size:20px;
+	color:#FFF;
+}
+.lg-main table tr th{
+	padding-top:30px;
+}
+.lg-main table tr td input{
+	width:453px;
+	height:40px;
+	background:rgb(229,229,229);
+	border:1px solid #FFF;
+}
+.lg-main .rem{
+	width:15px;
+	height:15px;
+}
+.lg-main table tr td font{
+	font-family:"Adobe 黑体 Std R";
+	font-size:18px;
+	color:#FFF;
+	line-height:50px;
+}
+.lg-main .lg-bt{
+	width:127px;
+	height:54px;
+	line-height:54px;
+	border:1px solid rgb(71,206,116);
+	border-radius:3px;
+	background:rgb(71,206,116);
+	color:#FFF;
+	text-align:center;
+	font-family:"Adobe 黑体 Std R";
+	font-size:20px;
+	margin-top:70px;
+}
+.lg-main table tr td a{
+	color:rgb(71,206,116);
+	text-decoration:none;
+	font-family:"Adobe 黑体 Std R";
+	font-size:18px;
+	padding-left:20px;
+}
+
+
+.lg-main .sanf{
+	float:left;
+	width:350px;
+	height:366px;
+	margin-left:120px;
+	background:url(../images/login/or.png) left no-repeat;
+}
+.lg-main .sanf .sanf_1{
+	margin-left:170px;
+}
+.lg-main .sanf .sanf_1 p{
+	font-family:"Adobe 黑体 Std R";
+	font-size:20px;
+	color:#FFF;
+	padding-top:20px;
+}
+
+.sanf_1 li{
+	width:330px;
+	height:60px;
+	margin-top:30px;
+	list-style:none;
+}
+.sanf_1 a{
+	line-height:60px;
+	text-decoration:none;
+	color:#FFF;
+	font-family:"Adobe 黑体 Std R";
+	font-size:18px;
+	padding-left:150px;
+}
+.sanf_1 .icon_xl{
+	background:url(../images/login/xl.png) center no-repeat;
+}
+.sanf_1 .icon_qq{
+	background:url(../images/login/qq.png) center no-repeat;
+}
+.sanf_1 .icon_wx{
+	background:url(../images/login/wx.png) center no-repeat;
+}
+
+
+
+
+
+.lg-main .have{
+	width:100%;
+	height:99px;
+	line-height:50px;
+	border:2px solid rgb(125,125,125);
+	border-radius:5px;
+	text-align:center;
+	background:rgb(33,33,33);
+	margin-top:500px;
+}
+
+.lg-main .have p{
+	color:rgb(207,207,207);
+	font-family:"Adobe 黑体 Std R";
+	font-size:20px;
+}
+.lg-main .have p a{
+	color:rgb(71,206,116);
+	padding-left:20px;
+	text-decoration:underline;
+}

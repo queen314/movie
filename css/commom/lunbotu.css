@@ -1,0 +1,63 @@
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif; color:#333; margin:0 auto}
+table{border-collapse:collapse;border-spacing:0;}
+a{ color:#333; text-decoration:none;}
+a:hover{ text-decoration:none;}
+
+.row-content{ width:800px; margin:0 auto; text-align:left; clear:both}
+.showcase.cloud{ position:relative; width:100%; height:488px}
+.showcase.cloud .container{ width:100%; height:550px; overflow:hidden; position:relative}
+.showcase.cloud .slide{ position:absolute; top:0; left:0; z-index:0; width:100%; height:100%}
+.showcase.cloud .slide .content-main-visual{ width:100%; height:100%; overflow:hidden; position:relative}
+.showcase.cloud .slide .content-main-visual a{ display:none; width:100%; height:100%; overflow:hidden; position:absolute; z-index:0; top:0; left:0}
+.showcase.cloud .slide .content-main-visual a.pc{ display:block}
+.showcase.cloud .slide .content-main-visual a.tablet{ display:none}
+.showcase.cloud .slide .content-main-visual a.smartphone{ display:none}
+
+.showcase.cloud .slide .content-main-visual .bg1{ background:url(../../images/commom/lunbotu/bg1.png) center no-repeat;}
+.showcase.cloud .slide .content-main-visual .bg2{ background:url(../../images/commom/lunbotu/bg5.png) center no-repeat;}
+.showcase.cloud .slide .content-main-visual .bg3{ background:url(../../images/commom/lunbotu/bg3.png) center no-repeat;}
+.showcase.cloud .slide .content-main-visual .bg4{ background:url(../../images/commom/lunbotu/bg4.png) center no-repeat;}
+.showcase.cloud .slide .content-main-visual .bg5{ background:url(../../images/commom/lunbotu/bg5.png) center no-repeat;}
+
+
+.showcase.cloud .slide .content-main-feature{ height:366px; width:720px; position:absolute; top:490px; left:200px}
+.showcase.cloud .slide .content-main-feature .feature{ width:54px; height:54px; text-align:center; position:relative; overflow:hidden; float:left; background:#FFF;}
+.showcase.cloud .slide .content-main-feature .feature a{ padding-top:0; display:block; width:54px; height:54px; position:relative; background-image:none; filter:alpha(opacity=40); color:#000; border:2px solid #FFF;}
+.showcase.cloud .slide .content-main-feature .feature a:hover{ background-image:none}
+.showcase.cloud .slide .content-main-feature .feature a:hover{ opacity:1; filter:alpha(opacity=100)}
+.showcase.cloud .slide .content-main-feature .feature a.current{ background:none}
+.showcase.cloud .slide .content-main-feature .feature a.current img{ display:none}
+.showcase.cloud .slide .content-main-feature .feature a img{ position:absolute; margin:auto; margin-left:-27px;}
+.showcase.cloud .slide .content-main-feature .feature a img.tablet{ display:none}
+.showcase.cloud .slide .content-main-feature .feature a img.mobile{ display:none}
+
+
+/*
+.showcase.cloud .slide .content-main-feature .azure{ background-color:transparent}
+.showcase.cloud .slide .content-main-feature .brick{ background-color:transparent}
+.showcase.cloud .slide .content-main-feature .gray{ background-color:transparent}
+.showcase.cloud .slide .content-main-feature .green { background-color:transparent}
+*/
+
+.showcase.cloud .slide .content-main-feature .dark-azure{ background-color:rgba(0,0,0,0.5);}
+.showcase.cloud .slide .content-main-feature .dark-brick{ background-color:rgba(0,0,0,0.5);}
+.showcase.cloud .slide .content-main-feature .dark-gray{ background-color:rgba(0,0,0,0.5);}
+.showcase.cloud .slide .content-main-feature .dark-green{ background-color:rgba(0,0,0,0.5);}
+
+
+.showcase.cloud .slide .content-main-feature .azure a:hover, .showcase.cloud .slide .content-main-feature .azure a.current{ background-color:#75C3EF; color:#fff}
+.showcase.cloud .slide .content-main-feature .azure a:hover span, .showcase.cloud .slide .content-main-feature .azure a.current span{ background-color:#75C3EF; color:#fff}
+.showcase.cloud .slide .content-main-feature .brick a:hover, .showcase.cloud .slide .content-main-feature .brick a.current{ background-color:#A83513; color:#fff}
+.showcase.cloud .slide .content-main-feature .brick a:hover span, .showcase.cloud .slide .content-main-feature .brick a.current span{ background-color:#A83513; color:#fff}
+.showcase.cloud .slide .content-main-feature .gray a:hover, .showcase.cloud .slide .content-main-feature .gray a.current{ background-color:#646464; color:#fff}
+.showcase.cloud .slide .content-main-feature .gray a:hover span, .showcase.cloud .slide .content-main-feature .gray a.current span{ background-color:#646464; color:#fff}
+.showcase.cloud .slide .content-main-feature .green a:hover, .showcase.cloud .slide .content-main-feature .green a.current{ background-color:#6FBB00; color:#fff}
+.showcase.cloud .slide .content-main-feature .green a:hover span, .showcase.cloud .slide .content-main-feature .green a.current span{ background-color:#6FBB00; color:#fff}
+
+.showcase.cloud .slide .content-main-feature .feature a.current{ opacity:1; filter:alpha(opacity=100)}
+.showcase.cloud .slide .content-main-feature .feature a .timerLine{ display:none; position:absolute; left:0; bottom:0; width:122px; height:91px}
+.showcase.cloud .slide .content-main-feature .feature a.current .timerLine{ display:block}

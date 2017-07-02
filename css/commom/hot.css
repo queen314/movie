@@ -1,0 +1,108 @@
+/* CSS Document */
+h1,h2,h3,h4 {
+  margin: 0px;
+  padding: 0px;
+  font-family:"����";
+  color:#000;
+}
+
+ul,ol,li {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  border: none;
+}
+
+a,body,input,button,p,div,span,textarea {
+  font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+}
+a,a:hover,body {
+  background: none;
+  color: #666;
+}
+a:hover {
+  text-decoration: none!important;
+}
+a {
+  color: #666;
+  text-decoration: none;
+  background: none;
+}
+
+
+.inR_right {
+  width: 19.27%;
+  float: left;
+  margin-left: 2.22%;
+  margin-top: 35px;
+}
+.inR_right > div {
+  box-shadow: 0px 0px 5px #65645f;
+  background: #ffffff url("/images/ff1895/bg04_11.jpg") left top no-repeat;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.inR_right .inR_div {
+  overflow: hidden;
+}
+.inR_right .inR_div h2 {
+  text-align: center;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: 500;
+  border-left:4px solid #000;
+}
+.inR_right .inR_div > div.inR_div01 {
+  margin: 0px -7px;
+  padding: 0px 20px 10px 20px;
+}
+.inR_right .inR_div > div.inR_div01 a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 2px 13px;
+  border: 1px solid #65645f;
+  color: #65645f;
+  margin: 7px;
+}
+.inR_right .inR_div > div.inR_div02 ul {
+  width: 258px;
+  margin: 10px auto;
+}
+.inR_right .inR_div > div.inR_div02 ul li {
+  width: 258px;
+  height: 153px;
+  overflow: hidden;
+  margin: 18px 0px;
+  text-align:center;
+}
+.inR_right .inR_div > div.inR_div02 ul li a {
+  display: block;
+}
+.inR_right .inR_div > div.inR_div02 ul li a img{
+  width: 225px;
+  height: 153px;
+}
+.inR_right .inR_div > div.inR_div02 > a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #dddad5;
+  line-height: 2.5;
+  font-size: 16px;
+  color: #020202;
+}
+.inR_right .inR_div > div.inR_div03 {
+  width: 225px;
+  height: 225px;
+  margin: 10px auto;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.inR_right .inR_div > div.inR_div03 img{
+  width: 225px;
+  height: 225px;
+}
+

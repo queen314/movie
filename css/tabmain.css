@@ -1,0 +1,301 @@
+﻿h1,h2,h3,h4 {
+  margin: 0px;
+  padding: 0px;
+}
+a,a:hover,body {
+  background: none;
+  color: #666;
+}
+a:hover {
+  text-decoration: none!important;
+}
+a,body,input,button,p,div,span,textarea {
+  font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+}
+p,body,ul,li,a div,span {
+  margin: 0px;
+}
+ul,ol,li {
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  border: none;
+}
+input,button {
+  border: none;
+  outline: none;
+}
+i {
+  font-style: normal;
+}
+.clearfix:after {
+  display: block;
+  overflow: hidden;
+  content: "";
+  clear: both;
+}
+.none {
+  display: none;
+}
+.w {
+  width: 1180px;
+  margin: 0px auto;
+  padding-bottom:50px;
+}
+body {
+  background: #f4f4f2!important;
+}
+html {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  border-top: 2px solid rgb(207,207,207);
+  min-height: 400px;
+}
+.main .w .main_tit > span {
+  display: inline-block;
+  width: 447.9px;
+  text-align: center;
+  padding: 16px 0px 42px 0px;
+  cursor: pointer;
+}
+.main .w .main_tit > span h2 {
+  font-size: 24px;
+  color: #000000;
+  border-right: 2px solid #d3cfca;
+}
+.main .w .main_tit > span p {
+  font-size: 18px;
+  color: #a49f99;
+  border-right: 2px solid #d3cfca;
+}
+.main .w .main_tit > span.on {
+  background:url(../images/tab/on-bg.png) center bottom no-repeat;
+}
+.main .w .main_tit{
+    border-bottom: 2px solid #d3cfca;
+	
+   }
+.main .w .main_tit > li{
+  width: 335.9px;
+  text-align: center;
+  padding: 16px 0px 42px 0px;
+}
+.main .w .main_tit > li a {
+  display:block;
+  /*width: 335.9px;*/
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+  border-right: 2px solid #d3cfca;
+}
+
+.main .w .main_tit > li.on {
+  background: url('/images/ff1895/bg01_03.png') center bottom no-repeat;
+}
+.main .w .main_tit .mt_top {
+  margin-top: 28px;
+  padding-bottom: 10px;
+}
+.main .w .main_tit .mt_top a {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-right: 2px solid #afa9a4;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.main .w .main_tit .mt_bot div.mtBot_div {
+  overflow: hidden;
+  padding: 20px 0px;
+  display: none;
+}
+.main .w .main_tit .mt_bot div.mtBot_div a {
+  display: inline-block;
+  background: #fff;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.main .w .main_tit .mt_bot div.mtBot_div a:hover {
+  background: #000!important;
+  color: #fff;
+}
+
+.main .w .main_tit .mt_bot div.mtBot_div a.act {
+  background: #000!important;
+  color: #fff;
+}
+
+.main .w .mcT {
+  margin-top: 0px!important;
+}
+.main .w .main_cont {
+  padding-top: 14px;
+  margin-top: -26px;
+}
+.main .w .main_cont .main_ui {
+  overflow: hidden;
+  margin: 0px -5px;
+}
+.main .w .main_cont .main_ui li {
+  float: left;
+  background: #ffffff;
+  overflow: hidden;
+  margin: 5px;
+  position: relative;
+  width: 313px;
+}
+.main .w .main_cont .main_ui li > div.img a {
+  display: block;
+  background:rgba(0,0,0,0.7);
+}
+.main .w .main_cont .main_ui li > div.img a:hover{
+	background:none;
+}
+
+/*.main .w .main_cont .main_ui li > div.img .a1{background:rgb(0,5,193);}
+.main .w .main_cont .main_ui li > div.img .a2{background:rgb(228,0,127);}
+.main .w .main_cont .main_ui li > div.img .a3{background:rgb(0,113,48);}*/
+
+.main .w .main_cont .main_ui li > div.img a img{
+  width:313px;
+  height:313px;
+  opacity:0.7;
+}
+.main .w .main_cont .main_ui li > div.text {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.main .w .main_cont .main_ui li > div.text .t_label {
+  position: absolute;
+  top: -78px;
+}
+.main .w .main_cont .main_ui li > div.text .t_label > a {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 2px solid #ffffff;
+  font-size: 16px;
+  color: #ffffff;
+  margin-right: 5px;
+}
+.main .w .main_cont .main_ui li > div.text .t_tit {
+  margin-top: 10px;
+}
+.main .w .main_cont .main_ui li > div.text .t_tit a {
+  font-size:18px;
+  color: #000000;
+  line-height: 2;
+}
+.main .w .main_cont .main_ui li > div.text .t_time {
+  font-size: 15px;
+  color: #000000;
+  line-height: 2;
+}
+.main .w .main_cont .main_ui li > div.text .t_time span {
+  font-size: 16px;
+  color: #000000;
+}
+.main .w .main_cont .main_ui li > div.text .t_view span {
+  display: inline-block;
+  min-width: 60px;
+}
+.main .w .main_cont .main_ui li > div.text .t_view span b {
+  margin-right: 3px;
+}
+.main .w .main_cont .main_ui li > div.text .t_view span b img {
+  margin-top: -8px;
+}
+.main .w .main_cont .main_ui li > div.text .t_view span i {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 23px;
+}
+.main .w .main_cont .main_ui li > p {
+  width: 100%;
+  height: 313px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+.main .w .main_cont .main_ui li > p a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main .w .main_cont .main_ui li > p a b {
+  font-size: 21px;
+  color: #ffffff;
+}
+.main .w .main_cont .main_ui li > p a p {
+  font-size: 18px;
+  color: #ffffff;
+}
+.span01 b {
+  width: 24px;
+  height: 23px;
+  background:url(../images/tab/i01.png) center center no-repeat;
+  display: block;
+  float: left;
+}
+.span02 b {
+  width: 22px;
+  height: 23px;
+  background:url(../images/tab/i02.png) center center no-repeat;
+  display: block;
+  float: left;
+}
+.span03 b {
+  width: 24px;
+  height: 23px;
+  background:url(../images/tab/i03.png) center center no-repeat;
+  display: block;
+  float: left;
+}
+
+
+/*返回顶部*/
+.main .top_btn{
+	width:50px;
+	height:110px;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+}
+.main .top_btn a{
+	width:50px;
+	height:50px;
+	text-align:center;
+}
+.main .top_btn a p{
+	background:rgb(71,206,116);
+	color:#FFF;
+	font-size:16px;
+	font-family:"黑体";
+	padding:5px;
+}
+.main .top_btn .return_top b{
+	display:block;
+	width:50px;
+	height:50px;
+	margin-top:10px;
+	background:url(../images/tab/top_bg.png) center no-repeat;
+	cursor:pointer;
+}

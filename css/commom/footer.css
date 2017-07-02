@@ -1,0 +1,35 @@
+/* CSS Document */
+body,ul{
+	margin:0;
+	padding:0;
+}
+li{ list-style:none;}
+a{ text-decoration:none;}
+.footer{
+	height:280px;
+	width:100%;
+	background:url(../../images/commom/footer/footer-bg.png) center no-repeat;
+}
+.footer img{
+	float:left;
+	margin-top:75px;
+	margin-left:100px;
+}
+
+.footer ul{
+	float:right;
+	height:130px;
+	margin-top:73px;
+	padding-top:10px;
+	background:url(../../images/commom/footer/border.png) right no-repeat;
+}
+.footer ul li{
+	padding-left:34px;padding-right:34px;
+	margin-bottom:15px;
+}
+.footer ul li,
+.footer ul li a{
+	color:#FFF;
+	font-family:"Adobe ºÚÌå Std R";
+	font-size:16px;
+}

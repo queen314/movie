@@ -1,0 +1,417 @@
+/* CSS Document */
+body{
+	margin:0 auto;
+	padding:0;
+	background:rgb(244,244,244);
+}
+input,textarea:focus{
+	outline:none;
+}
+li{
+	list-style:none;
+}
+a,button{
+	cursor:pointer;
+}
+h1,h2,h3,h4,h5{
+	font-weight:normal;
+}
+.head{
+	border:0;
+	height:68px;
+	width:100%;
+}
+
+/*�м䲿��*/
+.div1{
+	width:100%;
+	height:auto;
+	min-height:800px;
+	padding-bottom:30px;
+}
+.div1 .div1_1{
+	width:100%;
+	height:100px;
+	background:rgb(51,51,51);
+	text-align:center;	
+	
+	/* ������Ӱ */
+	-webkit-box-shadow:0 0 2px 3px #000;
+	-moz-box-shadow   :0 0 2px 3px #000;
+	box-shadow        :0 0 2px 3px #000;
+}
+.div1 .div1_1 p{
+	font-family:"����";
+	font-size:18px;
+	color:rgb(191,191,191);
+	margin:0;
+	line-height:100px;
+}
+
+#menu {
+    width: 88%;
+    height:auto;
+    margin: auto;
+    margin-top: 60px;
+}
+#menu #nav {
+    float: left;
+    display: block;
+    width: 21.7%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 2px 2px rgb(233,233,233);
+    -moz-box-shadow: 0px 0px 2px 2px rgb(233,233,233);
+    box-shadow: 0px 0px 2px 2px rgb(233,233,233);
+}
+#menu #nav li {
+    width: 100%;
+    height: 52px;
+    border-bottom: 2px solid rgb(217,217,217);
+}
+#menu #nav li a {
+    display: block;
+    line-height: 52px;
+    text-decoration: none;
+    padding: 0 0 0 5px;
+    text-align: center;
+    color: #000;
+}
+.selected {
+    border-left: 5px solid #000;
+    color: #fff;
+}
+#menu_con {
+    width: 76%;
+    height: auto;
+    float: left;
+    margin-left: 2.3%;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 2px 2px rgb(233,233,233);
+    -moz-box-shadow: 0px 0px 2px 2px rgb(233,233,233);
+    box-shadow: 0px 0px 2px 2px rgb(233,233,233);
+}
+.tag {
+    padding:20px;
+    height: auto;
+    min-height: 580px;
+}
+
+
+/*�༭������Ϣ*/
+.edit{
+	width:100%;
+	height:auto;
+	background:#FFF;
+}
+.edit p{
+	font-family:"����";
+	font-size:18px;
+	margin:0;
+	margin-bottom:20px;
+}
+
+/*����滻ͷ��*/
+.edit .toux{
+	width:16%;
+	height:auto;
+	float:left;
+}
+#preview1{
+	width:120px;
+	height:120px;
+	overflow:hidden;
+	margin:auto;
+	margin-top:0;
+	margin-bottom:10px;
+}
+#preview1 img{
+	width:120px;
+	height:120px;
+}
+
+.edit .toux input{
+	opacity:0;
+	position:absolute;
+	width:120px;
+	margin:auto;
+}
+.edit .toux span{
+	background:url(../images/person-info/tihuan.png) left no-repeat;
+	background-position:20px;
+	padding-left:40px;
+	font-family:"����";
+	font-size:16px;
+	color:rgb(108,122,129);
+	cursor:pointer;
+}
+
+/*�ұ߸�����Ϣ*/
+.edit .xinxi{
+	float:left;
+	width:72%;
+	height:auto;
+	margin-left:2%;
+	padding-left:35px;
+	border-left:1px solid rgb(191,191,191);
+}
+.edit .xinxi form{
+	width:100%;
+	height:auto;
+}
+.edit .xinxi form table{
+	width:100%;
+	height:auto;
+}
+
+
+.xinxi input,select{
+	width:100%;
+	height:30px;
+	border:1px solid rgb(191,191,191);
+	margin-top:5px;margin-bottom:15px;
+	
+	/* ������Ӱ */
+	-webkit-box-shadow:0px 2px 1px 0px rgb(234,234,234) inset;
+	-moz-box-shadow:0px 2px 1px 0px rgb(234,234,234) inset;
+	box-shadow:0px 2px 1px 0px rgb(234,234,234) inset;
+}
+.xinxi select{
+	height:32px;
+	/*�ܹؼ�����Ĭ�ϵ�selectѡ�����ʽ���*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	
+	/*��ѡ�������Ҳ��м���ʾС��ͷͼƬ*/
+	background:url(../images/person-info/nav-down.png) no-repeat right 10px center;
+ }
+
+.xinxi label{
+	font-family:"����";
+	font-size:15px;
+	color:rgb(99,99,99);
+}
+.xinxi table tr td{
+	padding-right:10px;
+}
+
+
+/*���水ť*/
+.edit .save_bt{
+	text-align:center;
+}
+.edit .save_bt button{
+	width:120px;
+	height:35px;
+	line-height:35px;
+	background:rgb(71,206,116);
+	border:1px solid rgb(71,206,116);
+	border-radius:5px;
+	color:#FFF;
+	font-family:"����";
+	font-size:16px;
+	text-align:center;
+	
+	margin:50px auto;
+}
+
+/*���������Ʒ*/
+.production{
+	width:100%;
+	height:auto;
+	margin-top:20px;
+	background:#FFF;
+}
+.production li{
+	float:left;
+	width:32%;
+	font-family:"����";
+	font-size:18px;
+	border:1px solid #ccc;
+	border-radius:3px;
+	margin-right:1%;
+	margin-bottom:20px;
+}
+.production li a{
+	float:right;
+	padding:10px;
+	background:url(../images/person-info/close.png) right top no-repeat;
+}
+.production li img{
+	width:100%;
+	height:auto;
+}
+.production li p{
+	font-family:"Adobe ���� Std R";
+	font-size:18px;
+	color:#000;
+	width:90%;
+	margin:15px auto;
+}
+.production li p span{
+	float:right;
+	color:rgb(133,132,132);
+}
+.production .add{
+	width:50%;
+	height:80px;
+	margin:40px auto;
+	background:url(../images/person-info/add.png) top no-repeat;
+	text-align:center;
+	padding-top:70px;
+	cursor:pointer;
+}
+.production .add a{
+	background:none;
+	float:none;
+	line-height:30px;
+	font-family:"Adobe ���� Std R";
+	font-size:18px;
+}
+
+/*�����Ʒ����*/
+.theme-popover-mask {
+	z-index: 9998;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	display:none
+}
+.addPro {
+	z-index:9999;
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:660px;
+	height:400px;
+	margin:-180px 0 0 -330px;
+	border-radius:5px;
+	border:solid 1px #666;
+	background-color:#fff;
+	display:none;
+	box-shadow: 0 0 10px #666;
+	overflow:auto;
+	overflow-x:hidden;
+}
+
+/*�رմ���*/
+.addPro a{
+	width:10px;
+	height:10px;
+	float:right;
+	padding-right:10px;
+}
+
+.addPro p{
+	font-family:"����";
+	font-size:16px;
+	margin-left:30px;
+	margin-top:20px;
+}
+
+.addPro form{
+	margin-left:30px;
+	margin-right:20px;
+	width:600px;
+	height:auto;
+}
+.addPro table label{
+	font-family:"����";
+	font-size:14px;
+	color:rgb(99,99,99);
+}
+.addPro form input{
+	width:100%;
+	height:22px;
+	margin-top:5px;margin-bottom:5px;
+	
+	/* ������Ӱ */
+	/*-webkit-box-shadow:0px 2px 1px 1px rgb(234,234,234) inset;
+	-moz-box-shadow:0px 2px 1px 1px rgb(234,234,234) inset;
+	box-shadow:0px 2px 1px 1px rgb(234,234,234) inset;*/
+}
+.addPro table{
+	width:100%;
+}
+.addPro table tr td{
+	padding-right:20px;
+}
+
+.addPro span{
+	margin-left:33px;
+	color:rgb(174,174,174);
+	font-family:"����";
+	font-size:12px;
+}
+
+
+/*�ϴ���Ʒ���水ť*/
+.addPro .pSave{
+	text-align:center;
+}
+.addPro .pSave button{
+	width:120px;
+	height:35px;
+	line-height:35px;
+	background:rgb(71,206,116);
+	border:1px solid rgb(71,206,116);
+	border-radius:5px;
+	color:#FFF;
+	font-family:"����";
+	font-size:16px;
+	text-align:center;
+	
+	margin:40px auto;
+}
+
+/*�滻ͷ�񵯴�*/
+.replace_photo{
+	z-index:9999;
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:660px;
+	height:400px;
+	margin:-180px 0 0 -330px;
+	border-radius:5px;
+	border:solid 1px #666;
+	background-color:#fff;
+	display:none;
+	box-shadow: 0 0 10px #666;
+	overflow:auto;
+	overflow-x:hidden;
+}
+/*�رմ���*/
+.replace_photo a{
+	width:10px;
+	height:10px;
+	float:right;
+	padding-right:10px;
+}
+.replace_photo h4{
+	font-family:"Adobe ���� Std R";
+	font-size:18px;
+	color:#000;
+	border-bottom:2px solid #ccc;
+	padding:10px;
+}
+
+#imghead {
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);
+}
+
+/*footer*/
+.foot{
+	border:0;
+	height:280px;
+	width:100%;
+}
