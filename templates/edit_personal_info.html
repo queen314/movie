@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>编辑个人信息</title>
+<link rel="STYLESHEET" type="text/css" href="css/commom/header.css">
+<link rel="stylesheet" type="text/css" href="css/commom/footer.css">
+<link type="text/css" rel="stylesheet" href="css/person-info.css">
+<link type="text/css" rel="stylesheet" href="css/jquery.Jcrop.min.css">
+<script type="text/javascript">
+ 
+ 
+                //图片上传预览    IE是用了滤镜。
+        function previewImage(file)
+        {
+          var MAXWIDTH  = 260; 
+          var MAXHEIGHT = 180;
+          var div = document.getElementById('preview1');
+          if (file.files && file.files[0])
+          {
+              div.innerHTML ='<img id=imghead>';
+              var img = document.getElementById('imghead');
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img id=imghead>';
+            var img = document.getElementById('imghead');
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight )
+            {
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                 
+                if( rateWidth > rateHeight )
+                {
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else
+                {
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+             
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+</script>
+</head>
+
+<body>
+<div class="header" id="header">
+	<img class="logo" src="images/commom/header/logo.png">
+	<ul>
+		<li class="two"><a href="#">首页</a></li>
+		<li class="five"><a href="#">全部电影节</a></li>
+		<li class="two"><a href="#">活动</a></li>
+		<li class="three"><a href="#">访谈录</a></li>
+		<li class="four"><a href="#">后期投寄</a></li>
+		<li class="four"><a href="#">关于我们</a></li>
+	</ul>
+	<img class="search" src="images/commom/header/search.png" id="isearch" onclick="search()">
+	<a href="#"><img class="photo" src="images/person-info/photo.png"></a>
+</div>
+<div id="search" class="sch">
+		<img src="images/commom/header/search-bg.png" class="img1">
+		<input type="text" id="sch" class="sch_k" placeholder="搜索电影节"/>
+		<a href="search.html"><img src="images/commom/header/search-search.png" class="img2"></a>
+		<img src="images/commom/header/close.png" class="img3" id="close">
+</div>
+
+<div class="div1">
+	<div class="div1_1">
+		<p>请在这里填写属于你个人的标签，填写上这些信息也许会有人找到你，他们需要你的帮助，共同完成一件事！</p>
+	</div>
+	
+	<!--代码部分begin-->
+	<div id="menu">
+		<!--tag标题-->
+		<ul id="nav">
+			<li><a href="#" class="selected">个人信息</a></li>
+			<li><a href="#" class="icon+[i]">参与过的作品</a></li>
+		</ul>
+		
+		<!--二级菜单-->
+		<div id="menu_con">
+			<section class="tag" style="display:block">
+				<div class="edit">
+					<p>个人信息</p>
+					<div class="toux">
+						<div id="preview1">
+							<img id="imghead" src="images/person-info/photo.png">
+						</div>
+						<input type="file" onchange="previewImage(this)"/>
+						<span>替换头像</span>
+					</div>
+					<div class="xinxi">
+						<form method="post" action="save.php">
+							<table>
+								<tr>
+									<table>
+										<tr>
+											<td style="width:77%; margin-right:5%"><label for="name">昵称</label><br/>
+												<input type="text" name="name" id="name" placeholder="熊猫--" />
+											</td>
+											<td style="width:18%;"><label for="sex">性别</label><br/>
+												<select type="text" name="sex" id="sex">
+													<option value="" selected="selected"> </option>
+													<option value="boy">男</option>
+													<option value="girl">女</option>
+												</select>
+											</td>
+										</tr>
+									</table>
+								</tr>
+								<tr>
+									<table>
+										<tr>
+											<td style="width:30%;"><label for="position0">位置</label><br/>
+												<select type="text" name="position0" id="position0">
+												</select>
+											</td>
+											<td style="width:30%;"><label for="position1"></label><br/>
+												<select type="text" name="position1" id="position1">
+												</select>
+											</td>
+											<td style="width:30%;"><label for="position2"></label><br/>
+												<select type="text" name="position2" id="position2">
+												</select>
+											</td>
+										</tr>
+									</table>
+								</tr>
+								<tr>
+									<table>
+										<tr>
+											<td style="width:50%;"><label for="school">毕业院校</label><br/>
+												<input type="text" name="school" id="school"/>
+											</td>
+											<td style="width:50%;"><label for="profession">专业</label><br/>
+												<input type="text" name="profession" id="profession"/>
+											</td>
+										</tr>
+									</table>
+								</tr>
+								<tr>
+									<table>
+										<tr>
+											<td style="width:100%;"><label for="p_label">个人标签</label><br/>
+												<input type="text" name="p_label" id="p_label" placeholder="例如：导演、制片、摄影等"/>
+											</td>
+										</tr>
+									</table>
+								</tr>
+								<tr>
+									<table>
+										<tr>
+											<td style="width:100%;"><label for="schedule">档期</label><br/>
+												<input type="text" name="schedule" id="schedule"/>
+											</td>
+										</tr>
+									</table>
+								</tr>
+							</table>
+						</form>
+					</div>
+					<div class="save_bt">
+						<button onclick="#" name="save" value="保存">保存</button>
+					</div>
+				</div>
+			</section>
+			 
+			<section class="tag" style="display:none">
+				<p>参与过的作品</p>
+				<ul class="production">
+					<li>
+						<a></a>
+						<img src="images/person-info/work1.png">
+						<p>左耳<span>广告MV</span></p>
+					</li>
+					
+					<li>
+						<a></a>
+						<img src="images/person-info/work2.png">
+						<p>《是这样吗》<span>广告MV</span></p>
+					</li>
+					
+					<li>
+						<a></a>
+						<img src="images/person-info/work3.png">
+						<p>《啊哭啊哭》<span>广告MV</span></p>
+					</li>
+					
+					<li>
+						<div class="add">
+							<a>添加作品</a>
+						</div>
+					</li>
+				</ul>
+			</section> 
+		</div>
+	</div>
+	<!--代码部分end-->
+</div>
+
+
+<!--添加作品弹窗-->
+<div class="addPro">
+	<a href="javascript:;" title="关闭" class="close"><img src="images/person-info/close.png"></a>
+	<p>添加作品</p>
+	<form id="upload_form" method="post" name="addForm" enctype="multipart/form-data" action="upload.php" onSubmit="return checkForm()">
+		<table>
+			<tr>
+				<td colspan="1"><label for="pName">作品名称</label><br/>
+					<input type="text" id="pName" name="pName">
+				</td>
+				<td><label for="pClass">作品类别</label><br/>
+					<input type="text" id="pClass" name="pClass">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="pYear">创作年份</label><br/>
+					<input type="text" id="pYear" name="pYear">
+				</td>
+				<td><label for="pJob">担任职务</label><br/>
+					<input type="text" id="pJob" name="pJob">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><label for="pLink">作品链接</label><br/>
+					<input type="text" id="pLink" name="pLink">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="pic"><label for="pCover">上传封面图片</label><br/>
+					<!-- hidden crop params -->
+					<input type="hidden" id="x1" name="x1" />
+					<input type="hidden" id="y1" name="y1" />
+					<input type="hidden" id="x2" name="x2" />
+					<input type="hidden" id="y2" name="y2" />
+				
+					<div><input type="file" name="image_file" id="image_file" onChange="fileSelectHandler()" /></div>
+				
+					<div class="error"></div>
+				
+					<div class="step2">
+						<h5>请选择需要截图的部位</h5>
+						<img id="preview" />
+				
+						<div class="info">
+							<label>文件大小</label> <input type="text" id="filesize" name="filesize" />
+							<label>图像尺寸</label> <input type="text" id="filedim" name="filedim" />
+							<label>宽度</label> <input type="text" id="w" name="w" />
+							<label>高度</label> <input type="text" id="h" name="h" />
+						</div>
+				
+						<input type="submit" value="上传" />
+					</div>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<span> * 仅支持JPG、PNG格式的图片，文件小于5M</span>
+	<div class="pSave">
+		<button onclick="#" name="pSave" value="保存" type="submit">保存</button>
+	</div>
+</div>
+<div class="theme-popover-mask"></div>
+
+
+<div class="footer" style=" display:inline-table; position:relative;">
+	<img src="images/commom/footer/footer-logo.png">
+	<ul>
+		<li><a href="#">关于我们</a></li>
+		<li><a href="#">加入我们</a></li>
+		<li><a href="#">合作推广</a></li>
+	</ul>
+	<ul>
+		<li><a href="#">全部电影节</a></li>
+		<li><a href="#">更多活动</a></li>
+		<li><a href="#">访谈录</a></li>
+		<li><a href="#">后期投寄</a></li>
+	</ul>
+	<ul style=" background:none;">
+		<li>&copy; 2016 北京良介文化传媒有限公司</li>
+		<li>京ICP备14003808号</li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="js/commom/jquery.min.js"></script>
+<script type="text/javascript" src="js/commom/search.js"></script>
+<script type="text/javascript" src="js/message/message.js"></script>
+<script type="text/javascript" src="js/commom/window.js"></script>
+<script type="text/javascript" src="js/jquery.Jcrop.min.js"></script>
+<script type="text/javascript" src="js/pic_up.js"></script>
+
+
+</body>
+</html>

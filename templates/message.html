@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="STYLESHEET" type="text/css" href="css/commom/header.css">
+	<link rel="STYLESHEET" type="text/css" href="css/commom/search.css">
+	<link rel="stylesheet" type="text/css" href="css/commom/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/message/message.css">
+	<link rel="stylesheet" type="text/css" href="css/message/sinaFaceAndEffec.css">
+<title>消息中心</title>
+
+</head>
+<body>
+<div class="header" id="header">
+	<img class="logo" src="images/commom/header/logo.png">
+	<ul>
+		<li class="two"><a href="#">首页</a></li>
+		<li class="five"><a href="#">全部电影节</a></li>
+		<li class="two"><a href="#">活动</a></li>
+		<li class="three"><a href="#">访谈录</a></li>
+		<li class="four"><a href="#">后期投寄</a></li>
+		<li class="four"><a href="#">关于我们</a></li>
+	</ul>
+	<img class="search" src="images/commom/header/search.png" id="isearch" onclick="search()">
+	<a href="#"><img class="photo" src="images/person-info/photo.png"></a>
+<!--	<a class="login" href="login.html">登录</a>-->
+</div>
+<div id="search" class="sch">
+		<img src="images/commom/header/search-bg.png" class="img1">
+		<input type="text" id="sch" class="sch_k" placeholder="搜索电影节"/>
+		<a href="search.html"><img src="images/commom/header/search-search.png" class="img2"></a>
+		<img src="images/commom/header/close.png" class="img3" id="close">
+</div>
+
+<!--代码部分begin-->
+<div id="menu">
+<!--tag标题-->
+    <ul id="nav">
+		<h3>我的消息</h3>
+        <li><a href="#" class="selected">提到我的</a></li>
+        <li><a href="#" class="icon+[i]">私信</a></li>
+        <li><a href="#" class="icon+[i]">评论</a></li>
+		<li><a href="#" class="icon+[i]">点赞</a></li>
+		<li><a href="#" class="icon+[i]">通知</a></li>
+    </ul>
+<!--二级菜单-->
+    <div id="menu_con">
+        <section class="tag" style="display:block">
+            <h4>提到我的</h4>
+			<div class="message">
+				<img class="photo" src="images/message/photo1.png">
+				<div class="message_main">
+					<p><a href="#">未未</a> 转发了</p>
+					<p><time>6月8日 16:55</time></p>
+					<p>我也喜欢黑泽明哦！</p>
+					<div class="forward_my">
+						<p><a href="#">@陈婷</a>：<a href="#">今天是黑泽明生日</a></p>
+					</div>
+					<div class="action">
+						<a><img src="images/message/zan.png"></a><span>(9)</span>|
+						<a href="#">转发</a><span>(6)</span>|
+						<a class="comment_bt">评论</a><span>(25)</span>
+					</div>
+					<!--评论框-->
+					<div class="comment">
+						<div class="content">
+							<div class="cont-box">
+								<textarea class="text" placeholder="评论"></textarea>
+							</div>
+							<div class="tools-box">
+								<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+								<div class="submit-btn"><input type="button" onClick="out()"value="评论" /></div>
+							</div>
+						</div>
+						<div class="hide">
+							<a class="hide_bt">收起</a>
+						</div>
+					</div>
+					
+					<!--提交后的评论-->
+					<!--
+					<div id="info-show">
+						<ul></ul>
+					</div>
+					-->
+				</div>
+			</div>
+			
+			<div class="message">
+				<img class="photo" src="images/message/photo11.png">
+				<div class="message_main">
+					<p><a href="#">江河</a> 转发了</p>
+					<p><time>6月8日 16:55</time></p>
+					<p>我也喜欢黑泽明哦！//<a>@大春</a>：好喜欢他的作品！</p>
+					<div class="forward_img">
+						<p style=" text-indent:1em"><a href="#">@陈婷</a>：<a href="#">黑泽明的画！特大师</a></p>
+						<img class="img1" src="images/message/img1.png">
+						<img class="img1" src="images/message/img2.png">
+						<img class="img2" src="images/message/img3.png">
+						<img class="img2" src="images/message/img4.png">
+						<img class="img2" src="images/message/img5.png">
+					</div>
+					<div class="action">
+						<a><img src="images/message/zan.png"></a><span>(9)</span>|
+						<a href="#">转发</a><span>(6)</span>|
+						<a class="comment_bt">评论</a><span>(25)</span>
+					</div>
+					<!--评论框-->
+					<div class="comment">
+						<div class="content">
+							<div class="cont-box">
+								<textarea class="text" placeholder="评论"></textarea>
+							</div>
+							<div class="tools-box">
+								<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+								<div class="submit-btn"><input type="button" onClick="out()"value="评论" /></div>
+							</div>
+						</div>
+						<div class="hide">
+							<a class="hide_bt">收起</a>
+						</div>
+					</div>
+					
+					<!--提交后的评论-->
+					<!--
+					<div id="info-show">
+						<ul></ul>
+					</div>
+					-->
+				</div>
+			</div>
+			
+			<div class="message">
+				<img class="photo" src="images/message/photo1.png">
+				<div class="message_main">
+					<p><a href="#">未未</a> 转发了</p>
+					<p><time>6月8日 16:55</time></p>
+					<p>这是我喜欢的导演，我喜欢的专访！！！</p>
+					<div class="forward">
+						<p style="text-indent:1em"><a href="#">@陈婷</a> 分享访谈：<a href="#">2016你好！你要快乐</a></p>
+						<a href="#"><img src="images/message/photo2.png"></a>
+						<a href="#"><p>奥地利|电子乐的盛会</p></a>
+						<font>By <a href="#">四月的雪</a></font>
+					</div>
+					<div class="action">
+						<a><img src="images/message/zan.png"></a><span>(9)</span>|
+						<a href="#">转发</a><span>(6)</span>|
+						<a class="comment_bt">评论</a><span>(25)</span>
+					</div>
+					<!--评论框-->
+					<div class="comment">
+						<div class="content">
+							<div class="cont-box">
+								<textarea class="text" placeholder="评论"></textarea>
+							</div>
+							<div class="tools-box">
+								<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+								<div class="submit-btn"><input type="button" onClick="out()"value="评论" /></div>
+							</div>
+						</div>
+						<div class="hide">
+							<a class="hide_bt">收起</a>
+						</div>
+					</div>
+					
+					<!--提交后的评论-->
+					<!--
+					<div id="info-show">
+						<ul></ul>
+					</div>
+					-->
+				</div>
+			</div>
+			
+			<div class="message">
+				<img class="photo" src="images/message/photo3.png">
+				<div class="message_main">
+					<p><a href="#">可可</a> 分享了</p>
+					<p><time>6月8日 16:55</time></p>
+					<p>喜欢这个电影！<a>//@陈婷：</a>太棒了！</p>
+					<div class="forward">
+						<p style="text-indent:1em"><a href="#">@朱云</a> 分享访谈：<a href="#">2016你好！你要快乐</a></p>
+						<a href="#"><img src="images/message/photo4.png"></a>
+						<a href="#"><p>奥地利|电子乐的盛会</p></a>
+						<font>By <a href="#">四月的雪</a></font>
+					</div>
+					<div class="action">
+						<a><img src="images/message/zan.png"></a><span>(9)</span>|
+						<a href="#">转发</a><span>(6)</span>|
+						<a class="comment_bt">评论</a><span>(25)</span>
+					</div>
+					<!--评论框-->
+					<div class="comment">
+						<div class="content">
+							<div class="cont-box">
+								<textarea class="text" placeholder="评论"></textarea>
+							</div>
+							<div class="tools-box">
+								<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+								<div class="submit-btn"><input type="button" onClick="out()"value="评论" /></div>
+							</div>
+						</div>
+						<div class="hide">
+							<a class="hide_bt">收起</a>
+						</div>
+					</div>
+					
+					<!--提交后的评论-->
+					<!--
+					<div id="info-show">
+						<ul></ul>
+					</div>
+					-->
+				</div>
+			</div>
+			
+			<div class="message">
+				<img class="photo" src="images/message/photo1.png">
+				<div class="message_main">
+					<p><a href="#">未未</a> 转发了</p>
+					<p><time>6月8日 16:55</time></p>
+					<div class="forward_my">
+						<p>我的文字：<a href="#">上一次看阿巴斯的电影还是五年前，第一次看到一部电影还可以这样拍...</a></p>
+					</div>
+					<div class="action">
+						<a><img src="images/message/zan.png"></a><span>(9)</span>|
+						<a href="#">转发</a><span>(6)</span>|
+						<a class="comment_bt">评论</a><span>(25)</span>
+					</div>
+					<!--评论框-->
+					<div class="comment">
+						<div class="content">
+							<div class="cont-box">
+								<textarea class="text" placeholder="评论"></textarea>
+							</div>
+							<div class="tools-box">
+								<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+								<div class="submit-btn"><input type="button" onClick="out()"value="评论" /></div>
+							</div>
+						</div>
+						<div class="hide">
+							<a class="hide_bt">收起</a>
+						</div>
+					</div>
+					
+					<!--提交后的评论-->
+					<!--
+					<div id="info-show">
+						<ul></ul>
+					</div>
+					-->
+				</div>
+			</div>
+			
+			<div class="message">
+				<img class="photo" src="images/message/photo1.png">
+				<div class="message_main">
+					<p><a href="#">未未</a> 转发了</p>
+					<p><time>6月8日 16:55</time></p>
+					<div class="forward_my">
+						<p>我的图片：<a>黑泽明的电影手稿！<img src="images/message/photo5.png"></a></p>
+					</div>
+					<div class="action">
+						<a><img src="images/message/zan.png"></a><span>(9)</span>|
+						<a href="#">转发</a><span>(6)</span>|
+						<a class="comment_bt">评论</a><span>(25)</span>
+					</div>
+					<!--评论框-->
+					<div class="comment">
+						<div class="content">
+							<div class="cont-box">
+								<textarea class="text" placeholder="评论"></textarea>
+							</div>
+							<div class="tools-box">
+								<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+								<div class="submit-btn"><input type="button" onClick="out()"value="评论" /></div>
+							</div>
+						</div>
+						<div class="hide">
+							<a class="hide_bt">收起</a>
+						</div>
+					</div>
+					
+					<!--提交后的评论-->
+					<!--
+					<div id="info-show">
+						<ul></ul>
+					</div>
+					-->
+				</div>
+			</div>
+        </section> 
+        <section class="tag" style="display:none">
+            <h4 class="sixin">私信</h4> 
+			<div class="private_message">
+				<img src="images/message/photo1.png">
+				<p><a href="#">未未</a> 私信我<time>6月8日 16:55</time></p>
+				<p>你好，看了您的作品，我们很喜欢希望可以合作。我们是《大地重生》剧组...<a class="delete" onclick="">删除</a></p>
+			</div>
+			<div class="private_detail">
+				<div class="view">
+					<img src="images/message/photo1.png">
+					<p><a href="#">未未</a> <time>6月8日 16:55</time></p>
+					<p>你好，看了您的作品，我们很喜欢希望可以合作。我们是《大地重生》剧组，我们现在急需摄影指导和美术指导，看您有兴趣和我们合作吗？</p>
+				</div>
+				
+				<!--提交后的评论-->
+				<div id="info-show">
+					<ul></ul>
+				</div>
+				
+				<!--评论框-->
+				<div class="reply">
+					<div class="content">
+						<div class="cont-box">
+							<textarea class="text"></textarea>
+						</div>
+						<div class="tools-box">
+							<div class="operator-box-btn"><span class="face-icon"  >☺</span></div>
+							<div class="submit-btn"><input type="button" onClick="out()"value="回复" /></div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="private_message">
+				<img src="images/message/photo6.png">
+				<p><a href="#">可可</a> 私信我<time>6月7日 14:32</time></p>
+				<p>你好！我在院线看过你的电影，很喜欢你设计的场景！<a class="delete" onclick="">删除</a></p>
+			</div>
+			<div class="private_message">
+				<img src="images/message/photo7.png">
+				<p><a href="#">陈粒</a> 私信我<time>1月8日 16:33</time></p>
+				<p>最近在忙什么呢，好久不见你啊<a class="delete" onclick="">删除</a></p>
+			</div>
+			  
+        </section> 
+        <section class="tag"  style="display:none">
+            <h4>评论</h4>
+			<div class="message remark">
+				<img class="photo" src="images/message/photo1.png">
+				<div class="message_main">
+					<p><a href="#">未未</a> 评论我<time>6月8日 16:55</time></p>
+					<p>这是我喜欢的导演，我喜欢的专访！！！</p>
+					<div class="forward_my">
+						<p>我的分享：<a>访谈[阿巴斯导演专访]<img src="images/message/photo10.png"></a></p>
+					</div>
+					<div class="action">
+						<a onclick="">删除</a>|
+						<a class="comment_bt">回复</a>
+					</div>
+					<!--评论框-->
+					<div class="comment">
+						<div class="content">
+							<div class="cont-box">
+								<textarea class="text" placeholder="评论"></textarea>
+							</div>
+							<div class="tools-box">
+								<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+								<div class="submit-btn"><input type="button" onClick="out()"value="回复" /></div>
+							</div>
+						</div>
+						<div class="hide">
+							<a class="hide_bt">收起</a>
+						</div>
+					</div>
+					
+					<!--提交后的评论-->
+					<!--
+					<div id="info-show">
+						<ul></ul>
+					</div>
+					-->
+				</div>
+			</div>
+			
+			<div class="message remark">
+				<img class="photo" src="images/message/photo6.png">
+				<div class="message_main">
+					<p><a href="#">阿呆</a> 评论我<time>3月23日 08:23</time></p>
+					<p>这段文字写得深入，分析到位，是难得的好影评!</p>
+					<div class="forward_my">
+						<p>我的文字：<a>上一次看阿巴斯的电影还是五年前，第一次看到一部电影还可以这样拍...</a></p>
+					</div>
+					<div class="action">
+						<a onclick="">删除</a>|
+						<a class="comment_bt">回复</a>
+					</div>
+					<!--评论框-->
+					<div class="comment">
+						<div class="content">
+							<div class="cont-box">
+								<textarea class="text" placeholder="评论"></textarea>
+							</div>
+							<div class="tools-box">
+								<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+								<div class="submit-btn"><input type="button" onClick="out()"value="回复" /></div>
+							</div>
+						</div>
+						<div class="hide">
+							<a class="hide_bt">收起</a>
+						</div>
+					</div>
+					
+					<!--提交后的评论-->
+					<!--
+					<div id="info-show">
+						<ul></ul>
+					</div>
+					-->
+				</div>
+			</div>
+			
+			<div class="message remark">
+				<img class="photo" src="images/message/photo11.png">
+				<div class="message_main">
+					<p><a href="#">阿呆</a> 评论我<time>3月23日 16:55</time></p>
+					<p>他画的分镜简直就是艺术品啊！</p>
+					<div class="forward_my">
+						<p>我的图片：<a>黑泽明的电影手稿！<img src="images/message/photo5.png"></a></p>
+					</div>
+					<div class="action">
+						<a onclick="">删除</a>|
+						<a class="comment_bt">回复</a>
+					</div>
+					<!--评论框-->
+					<div class="comment">
+						<div class="content">
+							<div class="cont-box">
+								<textarea class="text" placeholder="评论"></textarea>
+							</div>
+							<div class="tools-box">
+								<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+								<div class="submit-btn"><input type="button" onClick="out()"value="回复" /></div>
+							</div>
+						</div>
+						<div class="hide">
+							<a class="hide_bt">收起</a>
+						</div>
+					</div>
+					
+					<!--提交后的评论-->
+					<!--
+					<div id="info-show">
+						<ul></ul>
+					</div>
+					-->
+				</div>
+			</div>
+        </section>
+		<section class="tag"  style="display:none">
+            <h4>赞了我的</h4>
+			<div class="message">
+				<img class="photo" src="images/message/photo1.png">
+				<div class="message_main">
+					<p><a href="#">未未</a> 点赞了我</p>
+					<p><time>6月8日 16:55</time></p>
+					<div class="forward">
+						<p style="text-indent:1em"><a href="#">@朱云</a> 分享访谈：<a href="#">2016你好！你要快乐</a></p>
+						<a href="#"><img src="images/message/photo2.png"></a>
+						<a href="#"><p>奥地利|电子乐的盛会</p></a>
+						<font>By <a href="#">四月的雪</a></font>
+					</div>
+				</div>
+			</div>
+			
+			<div class="message">
+				<img class="photo" src="images/message/photo8.png">
+				<div class="message_main">
+					<p><a href="#">王赞</a> 点赞了我</p>
+					<p><time>6月8日 16:55</time></p>
+					<div class="forward_my">
+						<p>我的图片：<a>黑泽明的电影手稿！<img src="images/message/photo5.png"></a></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="message">
+				<img class="photo" src="images/message/photo9.png">
+				<div class="message_main">
+					<p><a href="#">王赞</a> 点赞了我</p>
+					<p><time>6月8日 16:55</time></p>
+					<div class="forward_my">
+						<p>我的文字：<a href="#">上一次看阿巴斯的电影还是五年前，第一次看到一部电影还可以这样拍...</a></p>
+					</div>
+				</div>
+			</div>
+        </section>
+		<section class="tag"  style="display:none">
+            <h4>通知</h4>
+			<div class="notice">
+				<h3>“和我一起拍电影”活动邀请函<time>6月8日 16:55</time></h3>
+				<article>
+					<p>恭喜你成功入选和我一起拍电影活动，本次活动我们将和“奔驰”汽车品牌合作。将于7月15日晚上7点-9点于上海虹口SOHO 3Q举办Design Matters 3.2.3，希望你也能来加入这次的活动！本次[Design Workshop设计夜话]是Design Matters进行的新尝试，特赞将邀BBDO上海首席创意官赖致宇担任特邀导师，进行创意案例分享，并抛出一个创意命题，由30位优秀创意人分组讨论，通过导师的指导，玩出炸裂的方案。特邀导师赖致宇是华文广告界知名的文案创意人，曾于台湾、新加坡、上海等地从事广告，拥有20年丰富的广告经验，曾被评选为年度最佳广告人、中国最佳创意领袖、最有影响力创意总监。多次担任ADFEST亚洲广告节、陇西广告界、4A金印奖、中国广告节、OneShow、NewYorkFestival等国内外各大广告奖评审。服务过GE、百事可乐、强生、肯德基、乐高玩具、阿迪达斯等国内外知名品牌。除了广告人的身份，他还是台湾知名专栏漫画家，曾经出版过“广告乱人类”等一系列的四个漫画与图文书，目前更致力创作长篇小说。</p>
+					<p>周五，来特赞，一起挖掘性感的大脑，结交酷炫的伙伴，30个创意人，有你一个，赶快报名！<a href="#" style="color:#0033FF; text-decoration:underline; font-style:italic;">点击报名</a></p>
+					<p>如果你有任何问题，请联系我们，我们会尽快回复Email：media@dianyingjie.com</p>
+					<p>感谢！</p>
+					<p>电影节团队</p>
+					<p>www.dianyingjie.com</p>
+				</article>
+				<a class="detail">查看详情</a>
+			</div>
+			
+        </section> 
+</div>
+</div>
+<!--代码部分end-->
+<div class="footer" style=" display:inline-table; position:relative;">
+	<img src="images/commom/footer/footer-logo.png">
+	<ul>
+		<li><a href="#">关于我们</a></li>
+		<li><a href="#">加入我们</a></li>
+		<li><a href="#">合作推广</a></li>
+	</ul>
+	<ul>
+		<li><a href="#">全部电影节</a></li>
+		<li><a href="#">更多活动</a></li>
+		<li><a href="#">访谈录</a></li>
+		<li><a href="#">后期投寄</a></li>
+	</ul>
+	<ul style=" background:none;">
+		<li>&copy; 2016 北京良介文化传媒有限公司</li>
+		<li>京ICP备14003808号</li>
+	</ul>
+</div>
+</body>
+<script type="text/javascript" src="js/commom/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/message/message.js"></script>
+<script type="text/javascript" src="js/message/comment.js"></script>
+<script type="text/javascript" src="js/message/sinaFaceAndEffec.js"></script>
+<script type="text/javascript" src="js/commom/search.js"></script>
+<script type="text/javascript">
+	// 绑定表情
+	$('.face-icon').SinaEmotion($('.text'));
+	// 测试本地解析
+	function out() {
+		var inputText = $('.text').val();
+		$('#info-show ul').append(reply(AnalyticEmotion(inputText)));
+	}
+	
+	var html;
+	function reply(cont){
+		html  = '<li>';
+		html += '<div class="head-face">';
+		html += '<img src="images/message/photo1.png" / >';
+		html += '</div>';
+		html += '<div class="reply-cont">';
+		html += '<p class="username">未未<time class="time">6月8日 16:55</time></p>';
+		html += '<p class="comment-body">'+cont+'</p>';
+		html += '<p class="comment-footer"></p>';
+		html += '</div>';
+		html += '</li>';
+		return html;
+	}
+</script>
+</html>

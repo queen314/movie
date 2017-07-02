@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+<link rel="stylesheet" type="text/css" href="css/commom/header.css" />
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+
+</head>
+
+<body>
+<div class="header" id="header">
+	<img class="logo" src="images/commom/header/logo.png">
+	<ul>
+		<li class="two"><a href="#">首页</a></li>
+		<li class="five"><a href="#">全部电影节</a></li>
+		<li class="two"><a href="#">活动</a></li>
+		<li class="three"><a href="#">访谈录</a></li>
+		<li class="four"><a href="#">后期投寄</a></li>
+		<li class="four"><a href="#">关于我们</a></li>
+	</ul>
+	<img class="search" src="images/commom/header/search.png" id="isearch" onclick="search()">
+	<a class="login" href="login.html">登录</a>
+</div>
+<div id="search" class="sch">
+		<img src="images/commom/header/search-bg.png" class="img1">
+		<input type="text" id="sch" class="sch_k" placeholder="搜索电影节"/>
+		<img src="images/commom/header/search-search.png" onclick="#" class="img2">
+		<img src="images/commom/header/close.png" class="img3" id="close">
+</div>
+<div class="lg-main">
+	<div style="margin:auto;width:80%; text-align:left">
+		<img src="images/commom/header/logo.png">
+		<h1>登录！</h1>
+		<div style="float:left;">
+			<form name="LoginForm" method="post" action="login.php" onsubmit="return InputCheck(this)">
+			<table>
+				<tr>
+					<th><label for="username">邮箱账号:</label></th>
+				</tr>
+				<tr>
+					<td><input id="txtUserName" name="username" type="text" onblur="GetPwdAndChk()"/></td>
+				</tr>
+				<tr>
+					<th><label for="password">登录密码:</label></th>
+				</tr>
+				<tr>
+					<td><input id="txtPassword" name="password" type="password"/></td>
+				</tr>
+				<tr>
+					<td><input id="chkRememberPwd" name="rem" type="checkbox" class="rem"><font>记住帐号密码</font></input></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="submit" value="登录" class="lg-bt" OnClick="SetPwdAndChk()"/><a href="#">忘记密码？</a></td>
+				</tr>
+			</table>
+		</form>
+		</div>
+		<div class="sanf">
+			<div class="sanf_1">
+				<p>第三方账号登录：</p>
+					<li class="icon_xl"><a href="#">新浪微博登录</a></li>
+					<li class="icon_qq"><a href="#">QQ账号登录</a></li>
+					<li class="icon_wx"><a href="#">微信账号登录</a></li>
+			</div>
+		</div>
+		<div class="have">
+			<p>还没有电影节账号？<a href="regist.html">现在注册！</a></p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/commom/jquery.min.js"></script>
+<script type="text/javascript" src="js/commom/search.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

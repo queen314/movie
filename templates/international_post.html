@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>国际项目投寄</title>
+
+    <link rel="STYLESHEET" type="text/css" href="css/commom/header.css">
+    <link rel="STYLESHEET" type="text/css" href="css/commom/search.css">
+    <link rel="stylesheet" type="text/css" href="css/commom/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/laterPost.css">
+</head>
+
+<body>
+
+<div class="header" id="header">
+    <img class="logo" src="images/commom/header/logo.png">
+    <ul>
+        <li class="two"><a href="http://ff1895.com/">首页</a></li>
+        <li class="five"><a href="http://ff1895.com/Portal/List/index/id/1">全部电影节</a></li>
+        <li class="two"><a href="http://ff1895.com/Portal/List/index/id/3">活动</a></li>
+        <li class="three"><a href="http://ff1895.com/Portal/List/index/id/4">访谈录</a></li>
+        <li class="four"><a href="http://ff1895.com/Portal/index/laterPost">后期投寄</a></li>
+        <li class="four"><a href="http://ff1895.com/Portal/index/aboutUs">关于我们</a></li>
+    </ul>
+    <img class="search" src="images/commom/header/search.png" id="isearch" onclick="search()">
+
+    <a href="http://ff1895.com/user/center/index"><img class="photo" src="%E6%8A%95%E5%AF%84_files/58194b9056289.png"></a>
+        <!--<input type="button" value="退出" class="logout" onclick="http://ff1895.com/user/index/logout"/>-->
+        <a class="logout" href="http://ff1895.com/user/index/logout">退出</a>
+    </div>
+<div id="search" class="sch">
+    <img src="images/commom/header/search-bg.png" class="img1">
+    <input name="keyword" id="sch" class="sch_k" placeholder="搜索电影节" type="text">
+    <a href="#" onclick="toS();"><img onclick="toS();" src="images/commom/header/search-search.png" class="img2"></a>
+    <img src="images/commom/header/close.png" class="img3" id="close">
+</div>
+
+<script>
+    function toS() {
+        var sch = document.getElementById('sch').value;
+//        location.href = 'http://ff1895.com/portal/search/index/keyword/' + sch;
+    }
+</script>
+
+<div class="post_table">
+    <form name="international_post" method="post" action="http://ff1895.com/Portal/index/later_post" id="international_myForm">
+        <table style="width:70%">
+            <tbody>
+
+            <tr>
+                <td>
+                    <label for="name">姓名：</label>
+                    <input name="name" style="width:80%;" required="required" type="text">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="phone">电话：</label>
+                    <input name="phone" style="width:80%;" required="required" type="text">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="email">邮箱：</label>
+                    <input name="email" style="width:80%;" required="required" type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="international_project">想参加的国际项目：</label>
+                    <textarea name="international_project" style="width:95%" required="required"></textarea>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="question">其它需求或疑问：</label>
+                    <textarea name="question" style="width:95%" required="required"></textarea>
+                </td>
+            </tr>
+
+        </tbody></table>
+        <input value="发送申请" class="send" type="submit">
+    </form>
+    <!--<a href="#" class="send" onclick="sub();">发送申请</a>-->
+</div>
+
+<div class="footer" style=" display:inline-table; position:relative;">
+    <img src="images/commom/footer/footer-logo.png">
+    <ul>
+        <li><a href="http://ff1895.com/Portal/index/aboutUs">关于我们</a></li>
+        <li><a href="http://ff1895.com/Portal/index/aboutUs#join">加入我们</a></li>
+        <li><a href="http://ff1895.com/Portal/index/aboutUs#coop">合作推广</a></li>
+    </ul>
+    <ul>
+        <li><a href="http://ff1895.com/Portal/List/index/id/1">全部电影节</a></li>
+        <li><a href="http://ff1895.com/Portal/List/index/id/3">更多活动</a></li>
+        <li><a href="http://ff1895.com/Portal/List/index/id/4">访谈录</a></li>
+        <li><a href="http://ff1895.com/Portal/index/laterPost">后期投寄</a></li>
+    </ul>
+    <ul style=" background:none;">
+        <li>© 2016 北京良介文化传媒有限公司</li>
+        <li>京ICP备14003808号</li>
+    </ul>
+</div>
+
+
+
+<script type="text/javascript">
+    function sub() {
+        document.getElementById('myForm').submit();
+    }
+</script>
+<script type="text/javascript" src="js/commom/jquery.js"></script>
+<script type="text/javascript" src="js/commom/search.js"></script>
+
+</body></html>

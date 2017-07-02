@@ -1,0 +1,597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>个人中心</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+	<link rel="STYLESHEET" type="text/css" href="css/commom/header.css">
+	<link rel="STYLESHEET" type="text/css" href="css/commom/search.css">
+	<link rel="stylesheet" type="text/css" href="css/commom/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/personalCenter.css">
+	<link rel="stylesheet" type="text/css" href="css/message/sinaFaceAndEffec.css">
+
+</head>
+<body>
+<div class="header" id="header">
+	<img class="logo" src="images/commom/header/logo.png">
+	<ul>
+		<li class="two"><a href="#">首页</a></li>
+		<li class="five"><a href="#">全部电影节</a></li>
+		<li class="two"><a href="#">活动</a></li>
+		<li class="three"><a href="#">访谈录</a></li>
+		<li class="four"><a href="#">后期投寄</a></li>
+		<li class="four"><a href="#">关于我们</a></li>
+	</ul>
+	<img class="search" src="images/commom/header/search.png" id="isearch" onclick="search()">
+	<a href="#"><img class="photo" src="images/person-info/photo.png"></a>
+<!--	<a class="login" href="login.html">登录</a>-->
+</div>
+<div id="search" class="sch">
+		<img src="images/commom/header/search-bg.png" class="img1">
+		<input type="text" id="sch" class="sch_k" placeholder="搜索电影节"/>
+		<a href="search.html"><img src="images/commom/header/search-search.png" class="img2"></a>
+		<img src="images/commom/header/close.png" class="img3" id="close">
+</div>
+
+<div class="top">
+	<img src="images/personalCenter/photo.png">
+	<div class="p_info">
+		<p><h2>陈婷 | 摄影师/导演</h2></p>
+		<p><span>北京 朝阳</span> | 档期：16年6月-8月</p>
+		<p>毕业于：北京电影学院，摄影系</p>
+		<a>关注</a>
+		<a id="private">私信</a>
+	</div>
+	
+	<ul>
+		<li style="background:url(images/personalCenter/browse.png) left no-repeat">
+			浏览量<span>29680</span>
+		</li>
+		<li style="background:url(images/personalCenter/like.png) left no-repeat">
+			点赞<span>680</span>
+		</li>
+		<li style="background:url(images/personalCenter/follow.png) left no-repeat">
+			关注<span>296</span>
+		</li>
+		<li style="background:url(images/personalCenter/fans.png) left no-repeat;border-bottom-style: none;">
+			粉丝<span>998</span>
+		</li>
+	</ul>
+</div>
+<!--发私信-->
+<div class="window">
+	<h2>给陈婷发送一封私信</h2>
+	<div class="comment">
+		<div class="content">
+			<div class="cont-box">
+				<textarea class="text" placeholder="说点什么..."></textarea>
+			</div>
+			<div class="tools-box">
+				<div class="operator-box-btn"><span class="face-icon">☺</span></div>
+			</div>
+			<div class="tools-box">
+				<div class="submit-btn"><input class="send" type="button" onClick="out()"value="发送" /></div>
+				<div class="submit-btn"><input class="cancel" type="button" onClick=""value="取消"/></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--首页tab电影节-->
+<div class="main">
+    <div class="w">
+		<!--4个类目-->
+        <div class="main_tit">
+            <span class="on"><h2>他的动态（3）</h2></span>
+            <span><h2>影单</h2></span>
+			<span><h2>作品</h2></span>
+            <span><h2 style="border-right-style: none;">收藏</h2></span>
+        </div>
+        <div class="main_cont">
+            <ul class="main_ui shouc-ul" id="main_ui01">
+				
+				<div class="message">
+					<img class="photo" src="images/personalCenter/photo6.png">
+					<div class="message_main">
+						<p>
+							<a href="#">陈婷</a> 分享访谈
+							<!--
+							<div class="delete">
+							</div>
+							-->
+						</p>
+						<p><time>刚刚</time></p>
+						<div class="forward">
+							<a href="#"><img src="images/personalCenter/photo13.png"></a>
+							<a href="#"><p>威尼斯 | 阿巴斯导演专访</p></a>
+							<font>By 李迪</font>
+						</div>
+						<div class="action">
+							<a><img src="images/message/zan.png"></a><span>(9)</span>|
+							<a class="forward_bt" href="#">转发</a><span>(6)</span>|
+							<a class="comment_bt">评论</a><span>(25)</span>
+						</div>
+						<!--评论框-->
+						<div class="comment">
+							<div class="bg">
+								<img class="bg-img" src="images/personalCenter/comment_bg.png">
+							</div>
+							<div class="content">
+								<div class="cont-box">
+									<textarea class="text" placeholder="评论"></textarea>
+								</div>
+								<div class="tools-box">
+									<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+									<div class="submit-btn"><input type="button" onClick="out()"value="评论" /></div>
+								</div>
+							</div>
+							<div class="hide">
+								<a class="hide_bt">收起</a>
+							</div>
+						</div>
+						
+						<!--提交后的评论-->
+						<!--
+						<div id="info-show">
+							<ul></ul>
+						</div>
+						-->
+					</div>
+				</div>
+				
+				<div class="message">
+					<img class="photo" src="images/personalCenter/photo1.png">
+					<div class="message_main">
+						<p><a href="#">钟未未</a> 收藏访谈</p>
+						<p><time>6月8日 16:55</time></p>
+						<p>这是我喜欢的导演，我喜欢的专访！！！</p>
+						<div class="forward">
+							<a href="#"><img src="images/personalCenter/photo10.png"></a>
+							<a href="#"><p>莫斯科 | 李安的十年</p></a>
+							<font>By 四月的雪</font>
+						</div>
+						<div class="action">
+							<a><img src="images/message/zan.png"></a><span>(9)</span>|
+							<a class="forward_bt" href="#">转发</a><span>(6)</span>|
+							<a class="comment_bt">评论</a><span>(25)</span>
+						</div>
+						<!--评论框-->
+						<div class="comment">
+							<div class="content">
+								<div class="cont-box">
+									<textarea class="text" placeholder="评论"></textarea>
+								</div>
+								<div class="tools-box">
+									<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+									<div class="submit-btn"><input type="button" onClick="out()"value="评论" /></div>
+								</div>
+							</div>
+							<div class="hide">
+								<a class="hide_bt">收起</a>
+							</div>
+						</div>
+						
+						<!--提交后的评论-->
+						<!--
+						<div id="info-show">
+							<ul></ul>
+						</div>
+						-->
+					</div>
+				</div>
+				
+				<div class="message">
+					<img class="photo" src="images/personalCenter/photo3.png">
+					<div class="message_main">
+						<p><a href="#">可可</a> 分享访谈</p>
+						<p><time>6月8日 16:55</time></p>
+						<p>喜欢这个电影！//<a>@阿风</a>：太棒了！</p>
+						<div class="forward">
+							<p style="text-indent:1em"><a href="#">@朱云</a> 分享访谈：<a href="#">2016你好！你要快乐</a></p>
+							<a href="#"><img src="images/personalCenter/photo2.png"></a>
+							<a href="#"><p>奥地利 | 电子乐的盛会</p></a>
+							<font>By 四月的雪</font>
+						</div>
+						<div class="action">
+							<a><img src="images/message/zan.png"></a><span>(9)</span>|
+							<a class="forward_bt" href="#">转发</a><span>(6)</span>|
+							<a class="comment_bt">评论</a><span>(25)</span>
+						</div>
+						<!--评论框-->
+						<div class="comment">
+							<div class="content">
+								<div class="cont-box">
+									<textarea class="text" placeholder="评论"></textarea>
+								</div>
+								<div class="tools-box">
+									<div class="operator-box-btn"><span class="face-icon"  >☺</span>140</div>
+									<div class="submit-btn"><input type="button" onClick="out()"value="评论" /></div>
+								</div>
+							</div>
+							<div class="hide">
+								<a class="hide_bt">收起</a>
+							</div>
+							
+							<!--提交后的评论-->
+							<!--
+							<div id="info-show">
+								<ul></ul>
+							</div>
+							-->
+						</div>
+						
+						
+						
+					</div>
+				</div>
+					
+            </ul>
+
+            <ul style=" height:auto;background:rgb(244,244,244);" class="main_ui none shouc-ul01" id="main_ui02">
+			
+                <li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover1.png"/></div>
+					<h3>《不二情书》导演创作札记</h3>
+					
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover2.png"/></div>
+					<h3>左耳</h3>
+					
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover3.png"/></div>
+					<h3>The ory of thing.</h3>
+					
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover4.png"/></div>
+					<h3>电影《灰姑娘》</h3>
+					
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover5.png"/></div>
+					<h3>爱情电影《一生一世》</h3>
+					
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover6.png"/></div>
+					<h3>后会无期MV</h3>
+					
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover7.png"/></div>
+					<h3>电影《灰姑娘》</h3>
+					
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover8.png"/></div>
+					<h3>爱情电影《一生一世》</h3>
+					
+				</li>
+				
+            </ul>
+			
+			<ul style=" height:auto;background:rgb(244,244,244);" class="main_ui none shouc-ul01" id="main_ui03">
+                
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover1.png"/></div>
+					<h3>不二情书<span>广告MV</span></h3>
+					<div class="t_view">
+					   <span class="span03">98</span>
+					   <span class="span01">2690</span>
+					   <span class="span02">269</span>
+					</div>
+					<div class="rsp"></div>
+					<div class="text">
+						<a href="personal_work.html">
+							<h3>《不二情书》第二部</h3>
+							<span>片中职务：导演、摄影</span>
+							<p>2016年11月</p>
+						</a>
+					</div>
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover2.png"/></div>
+					<h3>左耳<span>广告MV</span></h3>
+					<div class="t_view">
+					   <span class="span03">98</span>
+					   <span class="span01">2690</span>
+					   <span class="span02">269</span>
+					</div>
+					<div class="rsp"></div>
+					<div class="text">
+						<a href="personal_work.html">
+							<h3>《不二情书》第二部</h3>
+							<span>片中职务：导演、摄影</span>
+							<p>2016年11月</p>
+						</a>
+					</div>
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover3.png"/></div>
+					<h3>The ory of thing.<span>广告MV</span></h3>
+					<div class="t_view">
+					   <span class="span03">98</span>
+					   <span class="span01">2690</span>
+					   <span class="span02">269</span>
+					</div>
+					<div class="rsp"></div>
+					<div class="text">
+						<a href="personal_work.html">
+							<h3>《不二情书》第二部</h3>
+							<span>片中职务：导演、摄影</span>
+							<p>2016年11月</p>
+						</a>
+					</div>
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover4.png"/></div>
+					<h3>电影《灰姑娘》<span>广告MV</span></h3>
+					<div class="t_view">
+					   <span class="span03">98</span>
+					   <span class="span01">2690</span>
+					   <span class="span02">269</span>
+					</div>
+					<div class="rsp"></div>
+					<div class="text">
+						<a href="personal_work.html">
+							<h3>《不二情书》第二部</h3>
+							<span>片中职务：导演、摄影</span>
+							<p>2016年11月</p>
+						</a>
+					</div>
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover5.png"/></div>
+					<h3>爱情电影《一生一世》<span>广告MV</span></h3>
+					<div class="t_view">
+					   <span class="span03">98</span>
+					   <span class="span01">2690</span>
+					   <span class="span02">269</span>
+					</div>
+					<div class="rsp"></div>
+					<div class="text">
+						<a href="personal_work.html">
+							<h3>《不二情书》第二部</h3>
+							<span>片中职务：导演、摄影</span>
+							<p>2016年11月</p>
+						</a>
+					</div>
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover6.png"/></div>
+					<h3>后会无期MV<span>广告MV</span></h3>
+					<div class="t_view">
+					   <span class="span03">98</span>
+					   <span class="span01">2690</span>
+					   <span class="span02">269</span>
+					</div>
+					<div class="rsp"></div>
+					<div class="text">
+						<a href="personal_work.html">
+							<h3>《不二情书》第二部</h3>
+							<span>片中职务：导演、摄影</span>
+							<p>2016年11月</p>
+						</a>
+					</div>
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover7.png"/></div>
+					<h3>电影《灰姑娘》<span>广告MV</span></h3>
+					<div class="t_view">
+					   <span class="span03">98</span>
+					   <span class="span01">2690</span>
+					   <span class="span02">269</span>
+					</div>
+					<div class="rsp"></div>
+					<div class="text">
+						<a href="personal_work.html">
+							<h3>《不二情书》第二部</h3>
+							<span>片中职务：导演、摄影</span>
+							<p>2016年11月</p>
+						</a>
+					</div>
+				</li>
+				
+				<li class="work_li">
+					<div class="photo"><img src="images/personalCenter/cover8.png"/></div>
+					<h3>爱情电影《一生一世》<span>广告MV</span></h3>
+					<div class="t_view">
+					   <span class="span03">98</span>
+					   <span class="span01">2690</span>
+					   <span class="span02">269</span>
+					</div>
+					<div class="rsp"></div>
+					<div class="text">
+						<a href="personal_work.html">
+							<h3>《不二情书》第二部</h3>
+							<span>片中职务：导演、摄影</span>
+							<p>2016年11月</p>
+						</a>
+					</div>
+				</li>
+								
+            </ul>
+			
+			<ul class="main_ui none shouc-ul01" id="main_ui04">
+                <div class="message">
+					<img class="photo" src="images/personalCenter/movie.png">
+					<div class="message_main">
+						<p>
+							<a href="#">电影节</a> 发布
+							<!--
+							<div class="delete">
+							</div>
+							-->
+						</p>
+						<p><time>8月9号</time></p>
+						<div class="forward">
+							<a href="#"><img src="images/personalCenter/photo13.png"></a>
+							<a href="#"><p>威尼斯 | 阿巴斯导演专访</p></a>
+							<font>By 李迪</font>
+						</div>
+						<div class="collect">
+							收藏于2天前
+						</div>
+					</div>
+				</div>
+				
+				<div class="message">
+					<img class="photo" src="images/personalCenter/movie.png">
+					<div class="message_main">
+						<p>
+							<a href="#">电影节</a> 发布
+							<!--
+							<div class="delete">
+							</div>
+							-->
+						</p>
+						<p><time>1月6号</time></p>
+						<div class="forward">
+							<a href="#"><img src="images/personalCenter/collect2.png"></a>
+							<a href="#"><p>《料理》拍摄活动</p></a>
+							<font>By 李迪</font>
+						</div>
+						<div class="collect">
+							收藏于2月14日
+						</div>
+					</div>
+				</div>
+				
+				<div class="message">
+					<img class="photo" src="images/personalCenter/movie.png">
+					<div class="message_main">
+						<p>
+							<a href="#">电影节</a> 发布
+							<!--
+							<div class="delete">
+							</div>
+							-->
+						</p>
+						<p><time>1月6号</time></p>
+						<div class="forward">
+							<a href="#"><img src="images/personalCenter/collect3.png"></a>
+							<a href="#"><p>富川国际电影节</p></a>
+							<font>By 电影节</font>
+						</div>
+						<div class="collect">
+							收藏于2月14日
+						</div>
+					</div>
+				</div>
+				
+            </ul>
+			
+        </div>
+    </div>
+</div>
+
+<!--尾部-->
+<div class="footer" style=" display:inline-table; position:relative;">
+	<img src="images/commom/footer/footer-logo.png">
+	<ul>
+		<li><a href="#">关于我们</a></li>
+		<li><a href="#">加入我们</a></li>
+		<li><a href="#">合作推广</a></li>
+	</ul>
+	<ul>
+		<li><a href="#">全部电影节</a></li>
+		<li><a href="#">更多活动</a></li>
+		<li><a href="#">访谈录</a></li>
+		<li><a href="#">后期投寄</a></li>
+	</ul>
+	<ul style=" background:none;">
+		<li>&copy; 2016 北京良介文化传媒有限公司</li>
+		<li>京ICP备14003808号</li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="js/commom/jquery.js"></script>
+<script>
+    $(function(){
+        $('.main .main_tit span').click(function(){
+            $(this).addClass("on").siblings().removeClass();
+            $(".main .main_cont ul").hide().eq($('.main .main_tit span').index(this)).show().css();
+        });
+    });
+</script>
+<script type="text/javascript" src="js/commom/jquery.min.js"></script>
+<script type="text/javascript" src="js/commom/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/message/comment.js"></script>
+<script type="text/javascript" src="js/message/sinaFaceAndEffec.js"></script>
+<script type="text/javascript" src="js/commom/search.js"></script>
+
+<script type="text/javascript">
+	// 绑定表情
+	$('.face-icon').SinaEmotion($('.text'));
+	// 测试本地解析
+	function out() {
+		var inputText = $('.text').val();
+		$('#info-show ul').append(reply(AnalyticEmotion(inputText)));
+	}
+	
+	var html;
+	function reply(cont){
+		html  = '<li>';
+		html += '<div class="head-face">';
+		html += '<img src="images/message/photo1.png" / >';
+		html += '</div>';
+		html += '<div class="reply-cont">';
+		html += '<p class="username">未未<time class="time">6月8日 16:55</time></p>';
+		html += '<p class="comment-body">'+cont+'</p>';
+		html += '<p class="comment-footer"></p>';
+		html += '</div>';
+		html += '</li>';
+		return html;
+	}
+</script>
+<script type="text/javascript">
+$(function(){
+	$('#private').click(function(){
+		$('.window').show();
+		return false;
+	})
+	
+	$('.forward_bt').click(function(){
+		$('.window').show();
+		$(".window h2").text("转发动态");
+		$(".send").text("转发");
+		return false;
+	})
+
+	$('.submit-btn input').click(function(){
+		$('.window').hide();
+	})
+})
+</script>
+<script type="text/javascript">
+$(document).ready(function(){	
+	$(".work_li .rsp").hide();	
+	$(".work_li").hover(function(){
+		$(this).find(".rsp").stop().fadeTo(500,0.5)
+		$(this).find(".text").stop().animate({left:'0'}, {duration: 500})
+	},
+	function(){
+		$(this).find(".rsp").stop().fadeTo(500,0)
+		$(this).find(".text").stop().animate({left:'300'}, {duration: "fast"})
+		$(this).find(".text").animate({left:'-300'}, {duration: 0})
+	});
+});
+</script>
+</body>
+</html>
